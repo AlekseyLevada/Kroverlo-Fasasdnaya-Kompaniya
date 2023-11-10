@@ -1,0 +1,1820 @@
+<link rel="stylesheet" href="/assets/custom_assets/swiper.min.css" />
+<link rel="stylesheet" href="/assets/custom_assets/megasite_slider.min.css" />
+<style>
+    .company-text-zone {
+        margin: 0;
+    }
+
+    .company-products-item__top-section {
+        flex-direction: column;
+    }
+
+    .company-bottom-toolbar {
+        z-index: 10;
+    }
+
+    .tmpl-company-button-cart:before {
+        background-color: transparent !important;
+    }
+
+    .aui-button.aui-button_thin.company-products-item-cart.tmpl-company-button-cart {
+        position: relative;
+    }
+
+    .company-products-item-cart:before {
+        background-color: transparent;
+        -webkit-mask-box-image: none;
+        -webkit-mask-image: none;
+    }
+
+    .swiper-slide {
+        overflow: hidden;
+    }
+
+    .company-footer {
+        margin: 0;
+    }
+
+    .upscroll-arrow_visible {
+        z-index: 5;
+    }
+
+    .company-products-item__labels,
+    .discount-product,
+    .company-product-groups__wrapper,
+    .company-products-item__labels,
+    .company-product-groups__show-more-text,
+    .company-content-block,
+    .company-navigation-slider {
+        display: none;
+    }
+
+    .company-product-group {
+        overflow: visible;
+    }
+
+    .product-group__image-wrapper,
+    .company-products-item__image {
+        border: none;
+        border-radius: 0;
+    }
+
+    .company-product-group__name {
+        height: auto;
+    }
+
+    /*products*/
+    .company-products-item__wrapper {
+        margin-right: 0;
+    }
+
+    .company-products-item__top-section {
+        flex-direction: column;
+    }
+
+    /*advantages*/
+    ._customer-adv {
+        position: relative;
+    }
+
+    ._customer-adv .swiper-pagination {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        position: absolute;
+        top: auto;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    ._customer-adv .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        opacity: 1;
+        border: 1px solid #fff;
+    }
+
+    ._customer-adv .swiper-pagination-bullet-active {
+        background: transparent;
+    }
+</style>
+<style>
+    ._customer-main__container * {
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif !important;
+    }
+
+    ._customer-main__container {
+        max-width: 1208px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    ._customer-slider__main * {
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif !important;
+    }
+
+    ._customer-slider__main {
+        margin-top: -165px;
+        max-width: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    ._customer-slider {
+        overflow: hidden;
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    ._customer-slide {
+        display: flex;
+        height: 1430px;
+        padding: 190px 10px 10px;
+    }
+
+    ._customer-slide-1 {
+        background: url("//pulscenclub.ru/__send/kfk174.ru_99673958/slider/slider-1.png") no-repeat center center / cover;
+    }
+
+    ._customer-slide-2 {
+        background: url("//pulscenclub.ru/__send/kfk174.ru_99673958/slider/slider-2.png") no-repeat center center / cover;
+    }
+
+    ._customer-slide-3 {
+        background: url("//pulscenclub.ru/__send/kfk174.ru_99673958/slider/slider-3.png") no-repeat center center / cover;
+    }
+
+    ._customer-slide-4 {
+        background: url("//pulscenclub.ru/__send/kfk174.ru_99673958/slider/slider-4.png") no-repeat center center / cover;
+    }
+
+    ._customer-slide-5 {
+        background: url("//pulscenclub.ru/__send/kfk174.ru_99673958/slider/slider-5.png") no-repeat center center / cover;
+    }
+
+    ._customer-slide__info {
+        max-width: 1208px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    ._customer-slide__info-wrapper {
+        max-width: max-content;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 40px;
+    }
+
+    ._customer-slide__title {
+        font-weight: 600;
+        font-size: 46px;
+        line-height: 56px;
+        color: #121212;
+    }
+
+    ._customer-slide__text {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        color: #121212;
+    }
+
+    ._customer-slide__subtitle {
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #121212;
+    }
+
+    ._customer-slide__btn {
+        margin-top: 30px;
+        max-width: 121px;
+        width: 100%;
+        height: 44px;
+        background: #9a342f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff !important;
+        opacity: 1;
+        transition: all 0.3s;
+        text-decoration: none;
+    }
+
+    ._customer-slide__btn:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+    ._customer-slider__controls {
+        max-width: 1208px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 600px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        column-gap: 46px;
+    }
+
+    ._customer-slider .swiper-button-prev:before,
+    ._customer-slider .swiper-button-next:before,
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        display: none;
+    }
+
+    ._customer-slider__main .swiper-pagination {
+        margin: 0;
+        padding: 0;
+    }
+
+    ._customer-search__input {
+        border: none;
+    }
+
+    ._customer-slider__main .swiper-button-prev {
+        position: initial;
+        background: url("/system/ckeditor_assets/pictures/442928/content_prev.png");
+        width: 23px;
+        height: 40px;
+        transform: none;
+        opacity: 1;
+        margin: 0;
+    }
+
+    ._customer-slider__main .swiper-button-next {
+        position: initial;
+        background: url("/system/ckeditor_assets/pictures/442926/content_next.png");
+        width: 23px;
+        height: 40px;
+        transform: none;
+        opacity: 1;
+        margin: 0;
+    }
+
+    ._customer-slider__main .swiper-button-prev:hover {
+        background: url("/system/ckeditor_assets/pictures/442929/content_prev-hover.png");
+        transform: none;
+        width: 23px;
+        cursor: pointer;
+    }
+
+    ._customer-slider__main .swiper-button-next:hover {
+        width: 23px;
+        transform: none;
+        cursor: pointer;
+        background: url("/system/ckeditor_assets/pictures/442927/content_next-hover.png");
+    }
+</style>
+<style>
+    ._customer-groups {
+        padding: 0 10px;
+        position: relative;
+        top: -554px;
+        margin-bottom: -554px;
+        z-index: 1;
+        min-height: 554px;
+    }
+
+    ._customer-group__btn {
+        margin: 40px auto 0;
+        max-width: 154px;
+        width: 100%;
+        height: 44px;
+        background: #9a342f;
+        border-radius: 0;
+        opacity: 1;
+        transition: all 0.3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff !important;
+        text-decoration: none;
+    }
+
+    ._customer-group__btn:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    ._customer-groups__wrap {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+    }
+
+    .company-product-group {
+        margin: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 200px !important;
+        background: transparent;
+        border-radius: 0;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding: 0;
+        transition: all 0.3s;
+        box-shadow: none;
+        position: relative;
+    }
+
+    .company-product-group:hover .group__content:before {
+        opacity: 1;
+    }
+
+    .company-product-group:hover .company-product-group__name {
+        padding-bottom: 40px;
+    }
+
+    .company-product-group:hover .company-product-group__name::before {
+        display: flex;
+    }
+
+    .group__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: none;
+        background: #ffffff;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s;
+        overflow: hidden;
+    }
+
+    .group__content:before {
+        content: "";
+        display: block;
+        width: 110%;
+        height: 110%;
+        background: #fff linear-gradient(0deg, rgba(154, 52, 47, 0.3), rgba(154, 52, 47, 0.3));
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        opacity: 0;
+    }
+
+    .product-group__image-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background: transparent;
+        border: none;
+        transition: all 0.3s;
+        overflow: hidden;
+        padding: 10px 10px 50px 10px;
+        z-index: 2;
+    }
+
+    .product-group__image-wrapper img {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .company-product-group:hover .product-group__image-wrapper,
+    .company-product-group:hover .product-group__image-wrapper img {
+        mix-blend-mode: multiply;
+    }
+
+    .company-product-group__name {
+        margin: 0;
+        padding: 10px 0;
+        max-height: initial;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #121212 !important;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-grow: 1;
+        overflow: visible;
+        position: relative;
+        z-index: 3;
+    }
+
+    .company-product-group__name::before {
+        position: absolute;
+        content: "В КАТАЛОГ";
+        bottom: 10px;
+        left: -10px;
+        width: 100%;
+        height: 100%;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #121212;
+        display: none;
+        align-items: flex-end;
+        justify-content: center;
+        background: url("/system/ckeditor_assets/pictures/429092/content_gr-arrow.png") no-repeat bottom 3px right 50px;
+    }
+
+    .company-product-group__name:hover {
+        color: #121212 !important;
+    }
+</style>
+<style>
+    ._customer-products {
+        background: #ffffff;
+        padding: 80px 10px;
+    }
+
+    ._customer-products__title {
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 51px;
+        text-align: center;
+        color: #121212;
+    }
+
+    ._customer-products__btn {
+        margin: 40px auto 0;
+        max-width: 154px;
+        width: 100%;
+        height: 44px;
+        background: #9a342f;
+        border-radius: 0;
+        opacity: 1;
+        transition: all 0.3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff !important;
+        text-decoration: none;
+    }
+
+    ._customer-products__btn:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    ._customer-products__wrap {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+    }
+
+    .company-products-item {
+        margin: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 348px !important;
+        background: transparent;
+        border-radius: 0;
+        border: none;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        position: relative;
+        padding: 0;
+        transition: all 0.3s;
+        box-shadow: none;
+        position: relative;
+    }
+
+    .company-products-item__top-section {
+        width: 100%;
+    }
+
+    .item__content {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background: #ffffff;
+        border: 1px solid #e4e8ea;
+        transition: all 0.3s;
+        overflow: hidden;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .company-products-item__image {
+        max-width: 100%;
+        width: 100%;
+        max-height: initial;
+        height: 210px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ffffff;
+        border-radius: 0;
+        overflow: hidden;
+        border: 1px solid #e4e8ea;
+        border-bottom: none;
+    }
+
+    .company-products-item__image img {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .company-products-item__name {
+        margin: 0;
+        padding: 20px 10px 0;
+        display: flex;
+        max-height: 54px;
+        height: auto;
+        font-family: "Montserrat", sans-serif !important;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: center;
+        color: #121212 !important;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .company-products-item__price {
+        display: none;
+        margin: 15px 0;
+        padding: 0 18px;
+        font-size: 18px;
+        line-height: 23px;
+        font-weight: 700;
+        color: #000000;
+    }
+
+    .company-products-item__price .bp-price,
+    .company-products-item__price .price-currency {
+        font-size: 18px;
+    }
+
+    .company-products-item__buttons {
+        padding: 0 5px;
+        margin: 20px 0 0 !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tmpl-company-button.aui-button.aui-button_thin {
+        margin: 0 !important;
+        max-width: 100%;
+        width: 100% !important;
+        z-index: 1;
+        height: 44px !important;
+        min-width: initial !important;
+        background: #9a342f !important;
+        border-radius: 0 !important;
+        border: none !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-grow: 1;
+        font-family: "Montserrat", sans-serif !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        font-weight: 500 !important;
+        color: #ffffff !important;
+        text-transform: initial !important;
+        opacity: 1 !important;
+        transition: all 0.3s !important;
+    }
+
+    .tmpl-company-button.aui-button.aui-button_thin:hover {
+        background: #9a342f !important;
+        opacity: 0.7 !important;
+    }
+
+    .aui-button.aui-button_thin.company-products-item-cart.tmpl-company-button-cart {
+        margin: 0 0 0 5px !important;
+        max-width: 99px;
+        min-width: 40px !important;
+        width: 100% !important;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #e4e8ea !important;
+        border: none !important;
+        border-radius: 0 !important;
+        opacity: 1 !important;
+        font-size: 0 !important;
+        transition: all 0.3s;
+    }
+
+    .aui-button.aui-button_thin.company-products-item-cart.tmpl-company-button-cart:hover {
+        background: #e4e8ea !important;
+        opacity: 0.7 !important;
+    }
+
+    .aui-button.aui-button_thin.company-products-item-cart.tmpl-company-button-cart::before {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background: #e4e8ea url("/system/ckeditor_assets/pictures/429093/content_cart.png") no-repeat center center !important;
+    }
+
+    .aui-button.aui-button_thin.company-products-item-cart.tmpl-company-button-cart:hover:before {
+        background: #e4e8ea url("/system/ckeditor_assets/pictures/429093/content_cart.png") no-repeat center center !important;
+    }
+</style>
+<style>
+    ._customer-order {
+        padding: 80px 10px;
+        background: #e4e8ea;
+    }
+
+    ._customer-order__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    ._customer-order__form {
+        max-width: 811px;
+        width: 100%;
+        background: #ffffff;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        padding: 60px 50px;
+    }
+
+    ._customer-order__img {
+        display: flex;
+        margin-right: 40px;
+    }
+
+    ._customer-order__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #121212;
+    }
+
+    ._customer-order__form-items {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    ._customer-order__form-item {
+        max-width: 32.5%;
+        width: 100%;
+        height: 44px;
+        border: 1px solid #e4e8ea;
+        border-radius: 0;
+        padding: 0 20px;
+        background: #e4e8ea;
+        display: flex;
+        outline: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(18, 18, 18, 0.3);
+    }
+
+    ._customer-order__form-item::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(18, 18, 18, 0.3);
+    }
+
+    ._customer-order__form-btns {
+        margin-top: 20px;
+        max-width: 358px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    ._customer-order__add {
+        max-width: 100%;
+        width: 100%;
+        height: 44px;
+        border: 1px solid #9a342f;
+        background: transparent;
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        transition: all 0.3s;
+    }
+
+    ._customer-order__add span {
+        margin-right: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #9a342f;
+    }
+
+    ._customer-order__add:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+    ._customer-order__btn {
+        max-width: 131px;
+        width: 100%;
+        height: 44px;
+        flex-grow: 1;
+        background: #9a342f;
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        transition: all 0.3s;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+    }
+
+    ._customer-order__btn:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+    ._customer-order__add.disable {
+        background: #d6d6d6 !important;
+        color: #888888 !important;
+        border: none;
+        cursor: not-allowed !important;
+        opacity: 1;
+        box-shadow: none !important;
+    }
+
+    ._customer-order__add.disable span {
+        color: #888888 !important;
+    }
+
+    ._customer-order__btn.disable {
+        background: #d6d6d6 !important;
+        color: #888888 !important;
+        border: none;
+        cursor: not-allowed !important;
+        opacity: 1;
+        box-shadow: none !important;
+    }
+
+    ._customer-order__confidence {
+        max-width: 800px;
+        width: 100%;
+        color: #121212;
+        font: 400 12px/1.4 "Montserrat", sans-serif !important;
+        text-align: left;
+        margin: 20px auto 0 !important;
+    }
+
+    ._customer-order__confidence a {
+        color: #121212 !important;
+        text-decoration: underline !important;
+    }
+
+    ._customer-order__confidence a:hover {
+        text-decoration: none !important;
+    }
+</style>
+<style>
+    ._customer-about {
+        padding: 80px 10px;
+        background: #e4e8ea;
+    }
+
+    ._customer-about__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    ._customer-about__title {
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 51px;
+        color: #121212;
+    }
+
+    ._customer-about__text {
+        margin-top: 60px;
+    }
+
+    ._customer-about__text-item {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: rgba(18, 18, 18, 0.9);
+    }
+
+    ._customer-about__text-item--mt {
+        margin-top: 20px;
+    }
+
+    ._customer-about__text-list {
+        margin-top: 20px;
+    }
+
+    ._customer-about__text-list_item {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: rgba(18, 18, 18, 0.9);
+        position: relative;
+        padding-left: 25px;
+    }
+
+    ._customer-about__text-list_item::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+        width: 2px;
+        height: 2px;
+        border-radius: 100%;
+        background: rgba(18, 18, 18, 0.9);
+    }
+
+    ._customer-about__btn {
+        margin-top: 40px;
+        max-width: 182px;
+        width: 100%;
+        height: 44px;
+        background: #9a342f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        opacity: 1;
+        transition: all 0.3s;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+    }
+
+    ._customer-about__btn:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+    ._customer-about__slider {
+        max-width: 393px;
+        width: 100%;
+    }
+
+    ._customer-about__slider-wrapper {
+        margin-top: 30px;
+        overflow: hidden;
+        height: 286px;
+    }
+
+    .__customer-about__slide {
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .__customer-about__slide img {
+        max-width: 100%;
+    }
+
+    ._customer-about__slider-controls {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    ._customer-about .swiper-button-prev {
+        position: initial;
+        background: url("/system/ckeditor_assets/pictures/442930/content_prev.png");
+        width: 11px;
+        height: 20px;
+        margin: 0;
+    }
+
+    ._customer-about .swiper-button-next {
+        position: initial;
+        background: url("/system/ckeditor_assets/pictures/442932/content_next.png");
+        width: 11px;
+        height: 20px;
+        margin: 0;
+    }
+
+    ._customer-about .swiper-button-prev:hover {
+        background: url("/system/ckeditor_assets/pictures/442933/content_prev-hover.png");
+        cursor: pointer;
+    }
+
+    ._customer-about .swiper-button-next:hover {
+        cursor: pointer;
+        background: url("/system/ckeditor_assets/pictures/442931/content_next-hover.png");
+    }
+
+    .swiper-pagination {
+        margin-top: 30px;
+        position: initial;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    .swiper-pagination-bullet {
+        margin: 0 !important;
+        width: 10px;
+        height: 10px;
+        background: #ffffff;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #9a342f;
+        width: 12px;
+        height: 12px;
+    }
+</style>
+<style>
+    ._customer-adva__inner * {
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif !important;
+    }
+
+    ._customer-adva__inner {
+        background: #9a342f;
+        padding: 80px 10px;
+    }
+
+    ._customer-adva__container {
+        max-width: 1208px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    ._customer-adva__title {
+        font-weight: 600;
+        text-align: center;
+        font-size: 42px;
+        line-height: 51px;
+        color: #ffffff;
+    }
+
+    ._customer-adva__wrapper {
+        margin-top: 60px;
+    }
+
+    ._customer-adva__item {
+        max-width: 100%;
+        width: 100%;
+        background: #ffffff;
+        border: 1px solid #e4e8ea;
+        padding: 15px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ._customer-adva__item-img {
+        display: flex;
+    }
+
+    ._customer-adva__item-title {
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: #121212;
+    }
+
+    ._customer-adva__item-text {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #121212;
+    }
+
+    @media (max-width: 1200px) {
+        ._customer-order__img {
+            display: none;
+        }
+
+        ._customer-order__form {
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 880px) {
+        ._customer-slider__controls {
+            top: 50%;
+            justify-content: center;
+        }
+
+        ._customer-slide__info-wrapper {
+            max-width: 100%;
+        }
+
+        ._customer-products__wrap,
+        ._customer-groups__wrap {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        ._customer-order__form-items {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        ._customer-order__btn,
+        ._customer-order__form-item {
+            max-width: 100%;
+        }
+
+        ._customer-order__form-btns {
+            max-width: 100%;
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        ._customer-about__slider {
+            display: none;
+        }
+    }
+
+    @media (max-width: 550px) {
+        ._customer-slide {
+            height: 660px;
+        }
+
+        ._customer-slider__controls {
+            top: auto;
+            bottom: 25px;
+        }
+
+        ._customer-slide__info-wrapper {
+            padding: 10px;
+        }
+
+        ._customer-about__title,
+        ._customer-order__title,
+        ._customer-products__title,
+        ._customer-adva__title,
+        ._customer-slide__title {
+            text-align: center;
+            font-size: 24px;
+            line-height: 1.2;
+        }
+
+        ._customer-slide__text {
+            margin-top: 15px;
+            font-size: 12px;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        ._customer-slide__subtitle {
+            margin-top: 15px;
+            font-size: 24px;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        ._customer-slide__btn {
+            margin: 10px auto 0;
+        }
+
+        ._customer-groups {
+            padding: 30px 10px 0;
+            top: 0;
+            margin-bottom: 0;
+            min-height: initial;
+        }
+
+        ._customer-about,
+        ._customer-order,
+        ._customer-adva__inner,
+        ._customer-products {
+            padding: 30px 10px;
+        }
+
+        ._customer-products__wrap,
+        ._customer-groups__wrap {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .company-product-group {
+            min-height: 150px !important;
+        }
+
+        .company-products-item {
+            min-height: 250px !important;
+        }
+
+        .company-product-group__name {
+            font-size: 11px;
+        }
+
+        .company-product-group__name::before {
+            font-size: 14px;
+            background: url(/system/ckeditor_assets/pictures/429092/content_gr-arrow.png) no-repeat bottom 3px right 3px;
+        }
+
+        .company-products-item__image {
+            height: 120px;
+        }
+
+        .tmpl-company-button.aui-button.aui-button_thin {
+            padding: 0 5px;
+        }
+
+        .company-products-item__name {
+            padding: 10px 5px 0;
+            max-height: 67px;
+            height: 57px;
+            font-size: 12px;
+            line-height: 1.2;
+        }
+
+        ._customer-products__btn {
+            margin: 20px auto 0;
+        }
+
+        ._customer-order__form {
+            padding: 20px 10px;
+        }
+
+        ._customer-order__confidence {
+            text-align: center;
+        }
+
+        ._customer-adva__wrapper {
+            margin-top: 30px;
+        }
+
+        ._customer-adva__item {
+            height: 170px;
+        }
+
+        ._customer-adva__item-title {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        ._customer-adva__item-text {
+            font-size: 12px;
+            line-height: 1.2;
+        }
+
+        ._customer-about__btn,
+        ._customer-about__text {
+            margin-top: 20px;
+        }
+
+        ._customer-about__text-list_item,
+        ._customer-about__text-item {
+            font-size: 12px;
+            line-height: 1.2;
+        }
+
+        ._customer-about__text-item--mt {
+            margin-top: 10px;
+        }
+
+        ._customer-about__title {
+            text-align: left;
+        }
+    }
+</style>
+<div class="_customer-slider__main">
+    <div class="_customer-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide _customer-slide _customer-slide-1">
+                <div class="_customer-slide__info">
+                    <div class="_customer-slide__info-wrapper">
+                        <div class="_customer-slide__title">
+                            Сайдинг виниловый <br />
+                            «Лапландия» Магнолия
+                        </div>
+                        <div class="_customer-slide__text">
+                            При производстве Винилового сайдинга NORDSIDE используется только первичное импортное сырье
+                            с&nbsp;высоким содержанием диоксида титана в&nbsp;сочетании с&nbsp;высококачественными
+                            красителями, обеспечивает стабильность геометрических характеристик.
+                        </div>
+                        <div class="_customer-slide__subtitle">235 руб.</div>
+                        <a href="/goods/231389999-sayding_vinilovy_laplandiya_magnoliya" class="_customer-slide__btn"
+                            onclick="yaCounter52648651.reachGoal('megasite_mobile_link_catalog_238361306'); return true;">
+                            В каталог
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide _customer-slide _customer-slide-2">
+                <div class="_customer-slide__info">
+                    <div class="_customer-slide__info-wrapper">
+                        <div class="_customer-slide__title">
+                            Сэндвич-панель кровельная <br />
+                            МВУ 100
+                        </div>
+                        <div class="_customer-slide__text">
+                            Длина: от&nbsp;0.5м до&nbsp;16м; Вид по&nbsp;способу применения: <br />
+                            Кровельная; Покрытие: полимерное; Толщина: 100мм.
+                        </div>
+                        <div class="_customer-slide__subtitle">1 230 руб.</div>
+                        <a href="/goods/238361306-sendvich_panel_krovelnaya_mvu_100" class="_customer-slide__btn"
+                            onclick="yaCounter52648651.reachGoal('megasite_mobile_link_catalog_117625581'); return true;">
+                            В каталог
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide _customer-slide _customer-slide-3">
+                <div class="_customer-slide__info">
+                    <div class="_customer-slide__info-wrapper">
+                        <div class="_customer-slide__title">
+                            Металлочерепица Монтеррей <br />
+                            Полиэстер 0,45&nbsp;мм
+                        </div>
+                        <div class="_customer-slide__text">
+                            Материал: полиэстровая; Производитель: Металл Профиль; Модель по&nbsp;форме черепицы:
+                            монтеррей. Завершаете обустройство крыши, но&nbsp;не&nbsp;определились с&nbsp;материалом?
+                            Монтеррей
+                            Полиэстер - это&nbsp;решение. Металлочерепица Монтеррей Полиэстер применяется
+                            в&nbsp;строительстве.
+                        </div>
+                        <div class="_customer-slide__subtitle">330 руб./кв.м</div>
+                        <a href="/goods/117625581-metallocherepitsa_monterrey_poliester_0_45_mm"
+                            class="_customer-slide__btn"
+                            onclick="yaCounter52648651.reachGoal('megasite_mobile_link_catalog_177531198'); return true;">
+                            В каталог
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide _customer-slide _customer-slide-4">
+                <div class="_customer-slide__info">
+                    <div class="_customer-slide__info-wrapper">
+                        <div class="_customer-slide__title">
+                            Кровля фальцевая Кликфальц <br />
+                            Grand Line 0,45 PE с&nbsp;пленкой на&nbsp;замках
+                        </div>
+                        <div class="_customer-slide__text">
+                            Производитель: Grand Line. <br />
+                            Преимущество фальцевой кровли Кликфальц - это скрытый способ крепления. Это повышает
+                            надёжность и&nbsp;долговечность металлической кровли, так как в&nbsp;ней отсутствуют
+                            на&nbsp;рабочей
+                            поверхности сквозные отверстия, неизбежные при креплении.
+                        </div>
+                        <div class="_customer-slide__subtitle">429 руб./кв.м</div>
+                        <a href="/goods/177531198-klikfalts_grand_line_0_45_pe_s_plenkoy_na_zamkakh"
+                            class="_customer-slide__btn"
+                            onclick="yaCounter52648651.reachGoal('megasite_mobile_link_catalog_171042592'); return true;">
+                            В каталог
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide _customer-slide _customer-slide-5">
+                <div class="_customer-slide__info">
+                    <div class="_customer-slide__info-wrapper">
+                        <div class="_customer-slide__title">
+                            Фасадная панель GL <br />
+                            Состаренный кирпич Премиум пломбирный
+                        </div>
+                        <div class="_customer-slide__text">
+                            Производитель: Grand Line; Коллекция: Состаренный кирпич; Имитация: кирпич. Фасадные панели
+                            производят из тех же материалов, что и&nbsp;сайдинг. Их&nbsp;основа — поливинилхлорид или
+                            фиброцемент. Но&nbsp;в&nbsp;отличие от&nbsp;сайдинга фасадные панели более толстые
+                            и&nbsp;прочные.
+                        </div>
+                        <div class="_customer-slide__subtitle">604 руб./шт.</div>
+                        <a href="/goods/171042592-fasadnaya_panel_gl_sostarenny_kirpich_premium_plombirny"
+                            class="_customer-slide__btn"
+                            onclick="yaCounter52648651.reachGoal('megasite_mobile_link_catalog_231389999'); return true;">
+                            В каталог
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="_customer-slider__controls">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</div>
+<div class="_customer-groups">
+    <div class="_customer-main__container">
+        <div class="_customer-groups__wrap"></div>
+        <a href="/catalog" class="_customer-group__btn">Смотреть все</a>
+    </div>
+</div>
+<div class="_customer-products">
+    <div class="_customer-main__container">
+        <div class="_customer-products__title">Наши предложения</div>
+        <div class="_customer-products__wrap"></div>
+        <a href="/catalog" class="_customer-products__btn">Смотреть все</a>
+    </div>
+</div>
+<div class="_customer-order">
+    <div class="_customer-main__container">
+        <div class="_customer-order__wrapper">
+            <div class="_customer-order__form">
+                <div class="_customer-order__title">Оставьте заявку и&nbsp;получите расчет бесплатно!</div>
+                <div class="_customer-order__form-items">
+                    <input class="_customer-order__form-item" id="_customerName" placeholder="Ваше имя" required=""
+                        type="text" />
+                    <input class="_customer-order__form-item js-phoneMask" id="_customerPhone" placeholder="Телефон"
+                        required="" type="tel" />
+                    <input class="_customer-order__form-item" id="_customerEmail" placeholder="Почта" required=""
+                        type="email" />
+                </div>
+                <div class="_customer-order__form-btns">
+                    <div class="_customer-order__add ab-order js-apress-order-button js-get-order-form"
+                        data-company-contacts-url="https://www.kfk174.ru/contacts"
+                        data-company-name="Кровельно-Фасадная Компания" data-params='{"company_id":"99673958"}'
+                        data-type="message" id="_customerFile"
+                        onclick="yaCounter52648651.reachGoal('megasite_mobile_write_us'); return true;">
+                        <span>Прикрепить файл</span>
+                        <img src="/system/ckeditor_assets/pictures/429065/content_add.png" alt="" />
+                    </div>
+                    <div class="_customer-order__btn ab-order js-apress-order-button js-get-order-form"
+                        data-company-contacts-url="https://www.kfk174.ru/contacts"
+                        data-company-name="Кровельно-Фасадная Компания" data-params='{"company_id":"99673958"}'
+                        data-type="message" id="_customerSubmit"
+                        onclick="yaCounter52648651.reachGoal('megasite_mobile_write_us'); return true;">
+                        Отправить
+                    </div>
+                </div>
+                <p class="_customer-order__confidence">
+                    Нажимая "Отправить", вы&nbsp;даете согласие на&nbsp;обработку персональных данных
+                    в&nbsp;соответствии с&nbsp;<a href="/confidential">политикой конфиденциальности</a>
+                    и&nbsp;принимаете
+                    условия <a href="/terms">пользовательского соглашения</a>.
+                </p>
+            </div>
+            <div class="_customer-order__img">
+                <img src="/system/ckeditor_assets/pictures/429066/content_order-img.png" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="_customer-adva _customer-adv">
+    <div class="_customer-adva__inner">
+        <div class="swiper-pagination"></div>
+        <div class="_customer-adva__container">
+            <div class="_customer-adva__title">Наши преимущества</div>
+            <div class="swiper-container">
+                <div class="_customer-adva__wrapper swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="_customer-adva__item">
+                            <div class="_customer-adva__item-img">
+                                <img src="/system/ckeditor_assets/pictures/429053/content_adva-1.png" alt="" />
+                            </div>
+                            <div class="_customer-adva__item-title">На рынке более 5 лет</div>
+                            <div class="_customer-adva__item-text">Имеем огромный опыт работы на&nbsp;рынке кровельных
+                                и&nbsp;фасадных материалов</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-adva__item">
+                            <div class="_customer-adva__item-img">
+                                <img src="/system/ckeditor_assets/pictures/429054/content_adva-2.png" alt="" />
+                            </div>
+                            <div class="_customer-adva__item-title">Всегда на&nbsp;связи</div>
+                            <div class="_customer-adva__item-text">Квалифицированные мастера-консультанты ответят
+                                на&nbsp;все ваши вопросы </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-adva__item">
+                            <div class="_customer-adva__item-img">
+                                <img src="/system/ckeditor_assets/pictures/429055/content_adva-3.png" alt="" />
+                            </div>
+                            <div class="_customer-adva__item-title">Моментальная отгрузка</div>
+                            <div class="_customer-adva__item-text">Собственный склад продукции</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-adva__item">
+                            <div class="_customer-adva__item-img">
+                                <img src="/system/ckeditor_assets/pictures/429056/content_adva-4.png" alt="" />
+                            </div>
+                            <div class="_customer-adva__item-title">Большая и&nbsp;наглядная выставка материалов</div>
+                            <div class="_customer-adva__item-text">Удобное расположение шоу-рума в&nbsp;центре города
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-adva__item">
+                            <div class="_customer-adva__item-img">
+                                <img src="/system/ckeditor_assets/pictures/429057/content_adva-5.png" alt="" />
+                            </div>
+                            <div class="_customer-adva__item-title">Доставка в&nbsp;день обращения</div>
+                            <div class="_customer-adva__item-text">Доставка собственным транспортом</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-adva__item">
+                            <div class="_customer-adva__item-img">
+                                <img src="/system/ckeditor_assets/pictures/429058/content_adva-6.png" alt="" />
+                            </div>
+                            <div class="_customer-adva__item-title">Бесплатный замер объекта</div>
+                            <div class="_customer-adva__item-text">Предоставление услуги замерщика в&nbsp;день обращения
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-adva__item">
+                            <div class="_customer-adva__item-img">
+                                <img src="/system/ckeditor_assets/pictures/429059/content_adva-7.png" alt="" />
+                            </div>
+                            <div class="_customer-adva__item-title">Готовый расчет материалов от&nbsp;5 минут</div>
+                            <div class="_customer-adva__item-text">Прозрачный расчет со&nbsp;всеми нюансами</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-adva__item">
+                            <div class="_customer-adva__item-img">
+                                <img src="/system/ckeditor_assets/pictures/429060/content_adva-8.png" alt="" />
+                            </div>
+                            <div class="_customer-adva__item-title">Кровля и&nbsp;фасад “Под ключ”</div>
+                            <div class="_customer-adva__item-text">Выполняем строительные работы с&nbsp;гарантией</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-adva__item">
+                            <div class="_customer-adva__item-img">
+                                <img src="/system/ckeditor_assets/pictures/429061/content_adva-9.png" alt="" />
+                            </div>
+                            <div class="_customer-adva__item-title">Сертификаты качества </div>
+                            <div class="_customer-adva__item-text">Только проверенные материалы с&nbsp;письменной
+                                гарантией</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="_customer-adva__item">
+                            <div class="_customer-adva__item-img">
+                                <img src="/system/ckeditor_assets/pictures/429062/content_adva-10.png" alt="" />
+                            </div>
+                            <div class="_customer-adva__item-title">Готовые решения под&nbsp;ваш бюджет</div>
+                            <div class="_customer-adva__item-text">Наши специалисты подберут идеальное решение ваших
+                                задач</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="_customer-about">
+    <div class="_customer-main__container">
+        <div class="_customer-about__wrapper">
+            <div class="_customer-about__info">
+                <div class="_customer-about__title">О компании</div>
+                <div class="_customer-about__text">
+                    <div class="_customer-about__text-item">КФК - Кровельно-фасадная компания.</div>
+                    <div class="_customer-about__text-item _customer-about__text-item--mt">
+                        У&nbsp;нас вы&nbsp;найдете все необходимые материалы высокого качества для&nbsp;строительства
+                        зданий <br />
+                        и&nbsp;монтажа кровель и&nbsp;фасадов, от&nbsp;известных российских и&nbsp;мировых
+                        производителей.
+                    </div>
+                    <div class="_customer-about__text-list">
+                        <div class="_customer-about__text-list_item">Более 600 кровель монтируются из&nbsp;наших
+                            материалов каждый год</div>
+                        <div class="_customer-about__text-list_item">1100 фасадов смонтировано за&nbsp;2022 год</div>
+                        <div class="_customer-about__text-list_item">Собственное производство сэндвич-панелей
+                            и&nbsp;фиброцементных плит</div>
+                        <div class="_customer-about__text-list_item">Произвели более 150&nbsp;000&nbsp;м2 сэндвич
+                            панелей</div>
+                        <div class="_customer-about__text-list_item">18 специалистов в&nbsp;команде, которые постоянно
+                            повышают свою квалификацию</div>
+                        <div class="_customer-about__text-list_item">ТОП дистрибьюторы крупнейших заводов России</div>
+                    </div>
+                    <div class="_customer-about__text-item _customer-about__text-item--mt">
+                        Покупая материалы в КФК, вы получаете качественную консультацию от&nbsp;наших специалистов
+                        с&nbsp;бесплатным замером объекта и&nbsp;детальным расчетом стоимости материалов.
+                    </div>
+                </div>
+                <div class="_customer-about__btn ab-order js-apress-order-button js-orders-callback-link"
+                    data-app-order-confirm='&lt;p&gt; &lt;span style="font-size:16px;"&gt;Покупка товаров и отслеживание статуса заказа в мобильном приложении.&lt;/span&gt;&lt;/p&gt; &lt;div&gt; &lt;p&gt; В бесплатном приложении Пульса цен более 9 млн товаров и услуг, возможность быстро найти товар, связаться с поставщиком и оформить заказ. &lt;/p&gt; &lt;/div&gt; &lt;p&gt;  &lt;/p&gt;'
+                    data-button-type="order_callback" data-company="99673958" data-company-id="99673958"
+                    data-company-name="Кровельно-Фасадная Компания" data-company-name-rest=""
+                    data-company-url="https://www.kfk174.ru/catalog" data-params='{"company_id":"99673958"}'
+                    data-statistics="1" data-type="callback"
+                    onclick="yaCounter52648651.reachGoal('megasite_mobile_callback'); return true;">
+                    Получить расчет
+                </div>
+            </div>
+            <div class="_customer-about__slider">
+                <div class="_customer-about__slider-controls">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="_customer-about__slider-wrapper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide __customer-about__slide">
+                            <img src="/system/ckeditor_assets/pictures/436954/content_1.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide __customer-about__slide">
+                            <img src="/system/ckeditor_assets/pictures/436955/content_2.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide __customer-about__slide">
+                            <img src="/system/ckeditor_assets/pictures/436956/content_3.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide __customer-about__slide">
+                            <img src="/system/ckeditor_assets/pictures/436957/content_4.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide __customer-about__slide">
+                            <img src="/system/ckeditor_assets/pictures/436958/content_5.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide __customer-about__slide">
+                            <img src="/system/ckeditor_assets/pictures/436959/content_6.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide __customer-about__slide">
+                            <img src="/system/ckeditor_assets/pictures/436960/content_7.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide __customer-about__slide">
+                            <img src="/system/ckeditor_assets/pictures/436961/content_8.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide __customer-about__slide">
+                            <img src="/system/ckeditor_assets/pictures/436962/content_9.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide __customer-about__slide">
+                            <img src="/system/ckeditor_assets/pictures/436963/content_10.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide __customer-about__slide">
+                            <img src="/system/ckeditor_assets/pictures/436964/content_11.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/assets/custom_assets/swiper.min.js"></script>
+<script>
+    const sliderMain = new Swiper("._customer-slider", {
+        slidesPerView: 1,
+        grabCursor: true,
+        loop: true,
+        keyboard: {
+            enabled: true,
+        },
+        pagination: {
+            el: "._customer-slider__main .swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: "._customer-slider__main .swiper-button-next",
+            prevEl: "._customer-slider__main .swiper-button-prev",
+        },
+    });
+    const sliderAbout = new Swiper("._customer-about__slider-wrapper", {
+        slidesPerView: 1,
+        grabCursor: true,
+        loop: true,
+        keyboard: {
+            enabled: true,
+        },
+        pagination: {
+            el: "._customer-about .swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: "._customer-about .swiper-button-next",
+            prevEl: "._customer-about .swiper-button-prev",
+        },
+    });
+    const sliderAdv = new Swiper("._customer-adv .swiper-container", {
+        slidesPerView: 1,
+        loop: true,
+        grabCursor: true,
+        keyboard: {
+            enabled: true,
+        },
+        pagination: {
+            el: "._customer-adv .swiper-pagination",
+            dinamicBullets: true,
+            clickable: true,
+        },
+        autoplay: {
+            delay: 6000,
+        },
+        speed: 900,
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        const groups = document.querySelectorAll(".company-product-group");
+        const products = document.querySelectorAll(".company-products-item");
+
+        products.forEach(item => {
+            item.insertAdjacentHTML("afterbegin", `<div class="item__content"></div>`);
+            let itemContentWrapper = item.querySelector(".item__content");
+            let itemPriceCur = item.querySelector(".wholesale");
+            let itemPrice = item.querySelector(".company-products-item__price");
+            let itemBtn = item.querySelector(".company-products-item__buttons");
+            if (itemBtn) {
+                let span = itemBtn.querySelector(".tmpl-company-button.aui-button.aui-button_thin");
+                span.innerHTML = "Заказать";
+            }
+
+            let itemContent = item.querySelectorAll(".company-products-item__content");
+            itemContent.forEach(itemC => {
+                itemContentWrapper.append(itemC);
+            });
+
+            itemContentWrapper.append(itemBtn);
+        });
+
+        groups.forEach(item => {
+            item.insertAdjacentHTML("afterbegin", `<div class="group__content"></div>`);
+            let itemContentWrapper = item.querySelector(".group__content");
+            let itemImg = item.querySelector(".product-group__image-wrapper");
+            let itemTitle = item.querySelector(".company-product-group__name");
+            itemContentWrapper.append(itemImg);
+            itemContentWrapper.append(itemTitle);
+        });
+
+        function content(items, inner, block) {
+            if (items && items.length > 0) {
+                items.forEach(item => {
+                    const wrap = document.querySelector(inner);
+                    if (wrap) {
+                        wrap.append(item);
+                    }
+                });
+            } else {
+                document.querySelector(block).remove();
+            }
+        }
+
+        content(groups, "._customer-groups__wrap", "._customer-groups");
+        content(products, "._customer-products__wrap", "._customer-products");
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let _customerSubmitButton = document.querySelector("#_customerSubmit");
+        let _customerFile = document.querySelector("#_customerFile");
+        let _customerFinalMessage = "";
+
+        _customerSubmitButton.disabled == true;
+        _customerSubmitButton.classList.add("disable");
+
+        _customerFile.disabled == true;
+        _customerFile.classList.add("disable");
+
+        function _customerSendForm() {
+            if (_customerSubmitButton.disabled !== true && _customerFile.disabled !== true) {
+                _customerFinalMessage = `Добрый день!\nИмя: ${document.querySelector("#_customerName").value}\nПочта: ${document.querySelector("#_customerEmail").value}\nТелефон: ${document.querySelector("#_customerPhone").value
+                    }`;
+            }
+        }
+
+        function formValidate() {
+            if (event.target.value !== "") {
+                event.target.style.borderColor = "#e4e8ea";
+            } else {
+                event.target.style.borderColor = "red";
+            }
+            _customerSubmitButton.disabled =
+                [...document.querySelectorAll("._customer-order__form-item:required")].filter(element => element.value === "" || element.value === 0).length !== 0 ? true : false;
+
+            _customerFile.disabled = [...document.querySelectorAll("._customer-order__form-item:required")].filter(element => element.value === "" || element.value === 0).length !== 0 ? true : false;
+        }
+
+        document.querySelectorAll("._customer-order__form-item:required").forEach(element => {
+            element.addEventListener("change", () => {
+                formValidate();
+                if (_customerSubmitButton.disabled !== true && _customerFile.disabled !== true) {
+                    _customerSubmitButton.classList.remove("disable");
+                    _customerFile.classList.remove("disable");
+                }
+            });
+            element.addEventListener("mouseout", () => {
+                formValidate();
+                if (_customerSubmitButton.disabled !== true && _customerFile.disabled !== true) {
+                    _customerSubmitButton.classList.remove("disable");
+                    _customerFile.classList.remove("disable");
+                }
+            });
+        });
+
+        function openWidget() {
+            _customerSendForm();
+            setTimeout(() => {
+                document.querySelector("#order_messages_attributes_0_text").value = _customerFinalMessage;
+                document.querySelector(".js-input-email-auth") === null
+                    ? (document.querySelector("#order_messages_attributes_0_text").value += "\n" + "Почта: " + document.querySelector("#_customerEmail").value)
+                    : (document.querySelector(".js-input-email-auth").value = document.querySelector("#_customerEmail").value);
+            }, 1000);
+        }
+
+        _customerSubmitButton.addEventListener("click", function (event) {
+            openWidget();
+        });
+
+        _customerFile.addEventListener("click", () => {
+            setTimeout(() => {
+                document.getElementById("order_").click();
+            }, 1000);
+        });
+
+        let callFormTel = document.querySelectorAll(".js-phoneMask");
+
+        Array.prototype.forEach.call(callFormTel, function (input) {
+            let keyCode;
+
+            function mask(event) {
+                event.keyCode && (keyCode = event.keyCode);
+                let pos = this.selectionStart;
+                if (pos < 3) event.preventDefault();
+                let matrix = "+7 (___) ___ __ __",
+                    i = 0,
+                    def = matrix.replace(/\D/g, ""),
+                    val = this.value.replace(/\D/g, ""),
+                    new_value = matrix.replace(/[_\d]/g, function (a) {
+                        return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
+                    });
+                i = new_value.indexOf("_");
+                if (i !== -1) {
+                    i < 5 && (i = 3);
+                    new_value = new_value.slice(0, i);
+                }
+                let reg = matrix
+                    .substr(0, this.value.length)
+                    .replace(/_+/g, function (a) {
+                        return "\\d{1," + a.length + "}";
+                    })
+                    .replace(/[+()]/g, "\\$&");
+                reg = new RegExp("^" + reg + "$");
+                if (!reg.test(this.value) || this.value.length < 5 || (keyCode > 47 && keyCode < 58)) this.value = new_value;
+                if (event.type === "blur" && this.value.length < 5) this.value = "";
+            }
+
+            input.addEventListener("input", mask, false);
+            input.addEventListener("focus", mask, false);
+            input.addEventListener("blur", mask, false);
+            input.addEventListener("keydown", mask, false);
+        });
+    });
+</script>

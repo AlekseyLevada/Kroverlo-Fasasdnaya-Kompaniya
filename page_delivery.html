@@ -1,0 +1,1354 @@
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style type="text/css">
+    /* Start reset */
+
+    .company-content__column-second-wrapper .search-form {
+        display: none;
+    }
+
+    .modern-skin .company-content {
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    .tmpl-company-content {
+        background-color: transparent;
+    }
+
+    .company-content {
+        padding: 0px;
+        line-height: inherit;
+    }
+
+    .company-content img {
+        max-width: 100%;
+    }
+
+    .company-page-content .cpc-text-wrapper img {
+        max-width: 100%;
+    }
+
+    .company-page-content .cpc-text-wrapper iframe {
+        max-width: initial;
+    }
+
+    .company-content__column-second-wrapper {
+        padding: 0;
+        background-color: transparent;
+        border-radius: 0px;
+    }
+
+    .modern-skin .company-header {
+        margin: 0 !important;
+        height: 0 !important;
+    }
+
+    .modern-skin .company-header-title {
+        visibility: hidden;
+        height: 0 !important;
+    }
+
+    .company-header-tail {
+        margin-left: 100px;
+        z-index: 2;
+    }
+
+    .breadcrumbs-slider__container {
+        display: none;
+    }
+
+    .modern-skin .company-header:not(.company-about__header):not(.company-header__products) {
+        margin: 0 !important;
+    }
+
+    .company-header__content {
+        display: block;
+    }
+
+
+    .company-page-content {
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .cpc-header {
+        display: none;
+    }
+
+    .cp-text-wrapper {
+        margin: 0;
+    }
+
+    ._customer_hash span {
+        display: block;
+    }
+
+    ._customer_hash ul,
+    ._customer_hash ol,
+    ._customer_hash li {
+        list-style: none !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    ._customer_hash * {
+        font-family: 'Montserrat', sans-serif;
+        color: #2B2A29;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box !important;
+        transition: .3s ease-in-out;
+    }
+
+    /* End reset */
+
+    /* Main Styles*/
+
+    ._customer_delivery {
+        background: #FFFFFF;
+    }
+
+    ._customer_inner__container {
+        max-width: 1228px;
+        margin: 0 auto;
+        padding: 60px 10px 80px;
+    }
+
+    ._customer_inner_title {
+        margin-bottom: 60px;
+    }
+
+    ._customer_inner_title h1 {
+        font: 600 46px/56px "Montserrat", sans-serif;
+        color: #121212;
+    }
+
+    ._customer_inner__subtitle {
+        margin-bottom: 30px;
+    }
+
+    ._customer_inner__subtitle h2 {
+        font: 600 42px/51px "Montserrat", sans-serif;
+        color: #121212;
+    }
+
+    ._customer_inner_text {
+        margin-bottom: 60px;
+    }
+
+    ._customer_inner_text span {
+        font: 600 20px/30px "Montserrat", sans-serif;
+        color: #9A342F;
+    }
+
+    ._customer_inner__table-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    ._customer_inner__table-item {
+        background: #FFFFFF;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1019607843);
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1019607843);
+        padding: 40px 30px;
+    }
+
+    ._customer_inner__table-item:nth-of-type(2) span:first-of-type {
+        margin-bottom: 10px;
+    }
+
+    ._customer_inner__table-item-title {
+        margin-bottom: 30px;
+    }
+
+    ._customer_inner__table-item-title h2 {
+        font: 400 30px/37px "Montserrat", sans-serif;
+        color: #9A342F;
+    }
+
+    ._customer_inner__table-item-text span {
+        font: 400 16px/19px "Montserrat", sans-serif;
+        color: #2B2A29;
+    }
+
+    ._customer_conditions {
+        background: #9A342F;
+    }
+
+    ._customer_conditions__container {
+        max-width: 1228px;
+        margin: 0 auto;
+        padding: 82px 10px 75px;
+    }
+
+    ._customer_conditions__title {
+        margin-bottom: 60px;
+    }
+
+    ._customer_conditions__title h2 {
+        font: 600 42px/51px "Montserrat", sans-serif;
+        color: #FFFFFF;
+    }
+
+    ._customer_self {
+        background: #FFFFFF;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1019607843);
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1019607843);
+        margin-bottom: 20px;
+    }
+
+    ._customer_self__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    ._customer_self__text {
+        padding: 40px 40px 40px 30px;
+    }
+
+    ._customer_self__title {
+        margin-bottom: 32px;
+    }
+
+    ._customer_self__title h2 {
+        font: 400 30px/37px "Montserrat", sans-serif;
+        color: #9A342F;
+    }
+
+    ._customer_self__info span {
+        font: 400 16px/19px "Montserrat", sans-serif;
+        color: #2B2A29;
+    }
+
+    ._customer_self__info span:nth-of-type(1) {
+        margin-bottom: 20px;
+    }
+
+    ._customer_self__info span:nth-of-type(2) {
+        margin-bottom: 10px;
+    }
+
+    ._customer_self__map {
+        overflow: hidden;
+        width: 100%;
+        max-width: 629px;
+        height: 237px;
+    }
+
+    ._customer_self__map-container iframe {
+        width: calc(100% + 150px) !important;
+        height: calc(237px + 40px) !important;
+    }
+
+    ._customer_ak {
+        -webkit-box-shadow: 0px 0px 15px 0px #0000001A;
+        box-shadow: 0px 0px 15px 0px #0000001A;
+        background: #fff;
+        margin-bottom: 20px;
+        height: 280px;
+        overflow: hidden;
+    }
+
+    ._customer_ak__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    ._customer_ak__logo {
+        width: 100%;
+        max-width: 630px;
+    }
+
+    ._customer_ak__text {
+        padding: 41px 25px 0 20px;
+        background: #ffffff;
+    }
+
+    ._customer_ak__title {
+        margin-bottom: 33px;
+    }
+
+    ._customer_ak__title h2 {
+        font: 400 30px/36px 'Montserrat', sans-serif;
+        color: #9A342F;
+    }
+
+    ._customer_ak__info span {
+        font: 400 16px/19px 'Montserrat', sans-serif;
+        color: #2B2A29;
+        margin-bottom: 10px;
+    }
+
+    ._customer_ak__info span:last-of-type {
+        margin-bottom: 0 !important;
+    }
+
+
+    ._customer_tk {
+        background: #FFFFFF;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1019607843);
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1019607843);
+    }
+
+    ._customer_tk__container {
+        padding: 40px 30px;
+    }
+
+    ._customer_tk__title {
+        margin-bottom: 30px;
+    }
+
+    ._customer_tk__title h2 {
+        font: 400 30px/37px "Montserrat", sans-serif;
+        color: #9A342F;
+    }
+
+    ._customer_tk__text {
+        margin-bottom: 20px;
+    }
+
+    ._customer_tk__text span {
+        font: 400 16px/19px "Montserrat", sans-serif;
+        color: #2B2A29;
+    }
+
+    ._customer_tk__partners {
+        margin-bottom: 20px;
+    }
+
+    ._customer_partners-link {
+        cursor: pointer;
+    }
+
+    ._customer_partners__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    ._customer_partners__item {
+        background: #FFFFFF;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1490196078);
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1490196078);
+        width: -moz-fit-content;
+        width: -webkit-fit-content;
+        width: fit-content;
+        -webkit-transition: 0.1s ease-in-out;
+        -o-transition: 0.1s ease-in-out;
+        transition: 0.1s ease-in-out;
+    }
+
+    ._customer_partners__item:hover {
+        -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        transform: scale(1.03);
+        -webkit-transition: 0.1s ease-in-out;
+        -o-transition: 0.1s ease-in-out;
+        transition: 0.1s ease-in-out;
+    }
+
+    ._customer_partners__item-container {
+        padding: 20px;
+    }
+
+    ._customer_tk__text-info {
+        margin-bottom: 40px;
+    }
+
+    ._customer_tk__text-info span {
+        font: 400 16px/19px "Montserrat", sans-serif;
+        color: #2B2A29;
+    }
+
+    ._customer_calc-block__container {
+        display: grid;
+        grid-template-columns: 1fr 1.6fr;
+    }
+
+    ._customer_calc-block__text-bold {
+        margin-bottom: 20px;
+    }
+
+    ._customer_calc-block__text-bold span {
+        font: 600 16px/24px "Montserrat", sans-serif;
+        color: #2B2A29;
+    }
+
+    ._customer_calc-block__text-plain span {
+        font: 400 16px/24px "Montserrat", sans-serif;
+        color: #2B2A29;
+    }
+
+    #ecCalcLay {
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        border: 1px solid #E3E7E9;
+    }
+
+    #ecCalc {
+        padding: 20px 20px 30px;
+    }
+
+    #acCalcGetResult {
+        background: #9A342F !important;
+    }
+
+    .ec-calc-border {
+        margin: 15px 0;
+    }
+
+    .ec-calc .ec-calc-form-dop-checks input[type="checkbox"]:checked+label:before {
+        background-color: #9A342F !important;
+    }
+
+    ._customer_feedback {
+        background: #E4E8EA;
+    }
+
+    ._customer_feedback__container {
+        max-width: 1228px;
+        margin: 0 auto;
+        padding: 80px 10px;
+        display: grid;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        grid-template-columns: 2.5fr .95fr;
+        gap: 85px;
+    }
+
+    ._customer_form {
+        background: #FFFFFF;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1019607843);
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1019607843);
+    }
+
+    ._customer_form__container {
+        padding: 60px 50px;
+    }
+
+    ._customer_form__title {
+        margin-bottom: 30px;
+    }
+
+    ._customer_form__title h2 {
+        font: 700 24px/29px "Montserrat", sans-serif;
+        color: #121212;
+        text-transform: uppercase;
+    }
+
+    ._customer_form__inputs {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    ._customer_form__btn--file:disabled:hover,
+    ._customer_form__btn--submit:disabled:hover {
+        cursor: not-allowed !important;
+    }
+
+    ._customer_form__buttons button:disabled {
+        opacity: 0.7;
+    }
+
+    ._customer_form__input::-moz-placeholder {
+        font: normal 400 16px/19px "Montserrat", sans-serif;
+        color: #121212;
+        opacity: 30%;
+    }
+
+    ._customer_form__input::-webkit-input-placeholder {
+        font: normal 400 16px/19px "Montserrat", sans-serif;
+        color: #121212;
+        opacity: 30%;
+    }
+
+    ._customer_form__input:-ms-input-placeholder {
+        font: normal 400 16px/19px "Montserrat", sans-serif;
+        color: #121212;
+        opacity: 30%;
+    }
+
+    ._customer_form__input::-ms-input-placeholder {
+        font: normal 400 16px/19px "Montserrat", sans-serif;
+        color: #121212;
+        opacity: 30%;
+    }
+
+    ._customer_form__input::placeholder {
+        font: normal 400 16px/19px "Montserrat", sans-serif;
+        color: #121212;
+        opacity: 30%;
+    }
+
+    ._customer_form__input {
+        border: none;
+        outline: none;
+        width: 100%;
+        max-width: 230px;
+        height: 44px;
+        padding: 10px 20px;
+        background: #E4E8EA;
+        font: 400 16px/19px "Montserrat", sans-serif;
+        color: #121212;
+    }
+
+    ._customer_form__textarea {
+        display: none;
+    }
+
+    ._customer_form__buttons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 10px;
+    }
+
+    ._customer_form__btn:first-of-type {
+        width: 100% !important;
+        max-width: 217px !important;
+        height: 44px !important;
+        border: 1px solid #9A342F !important;
+        padding: 10px !important;
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+        gap: 10px !important;
+        font: 500 16px/19px "Montserrat", sans-serif !important;
+        color: #9A342F !important;
+        text-transform: none !important;
+        cursor: pointer !important;
+        outline: none !important;
+    }
+
+    ._customer_form__btn:last-of-type {
+        cursor: pointer !important;
+        width: 100% !important;
+        max-width: 131px !important;
+        height: 44px !important;
+        padding: 10px !important;
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+        font: 500 16px/19px "Montserrat", sans-serif !important;
+        background: #9A342F !important;
+        color: #FFFFFF !important;
+        text-transform: none !important;
+        outline: none !important;
+        border: none !important;
+    }
+
+    ._customer-form__confidence {
+        max-width: 800px;
+        width: 100%;
+        color: #121212;
+        font: 400 12px/1.4 "Montserrat", sans-serif !important;
+        text-align: left;
+        margin: 20px auto 0 !important;
+    }
+
+    ._customer-form__confidence a {
+        text-decoration: underline !important;
+    }
+
+    ._customer-form__confidence a:hover {
+        text-decoration: none !important;
+    }
+
+    @media (max-width:1250px) {
+
+        ._customer_self__text,
+        ._customer_self__map {
+            -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        }
+
+        ._customer_self__text {
+            padding: 30px;
+        }
+
+        ._customer_self__map {
+            height: 234px;
+        }
+
+        ._customer_inner__table-item {
+            padding: 23px;
+        }
+
+        ._customer_inner__table-item-title h2 {
+            font-size: 24px;
+        }
+
+        ._customer_conditions__container,
+        ._customer_inner__container,
+        ._customer_feedback__container {
+            padding: 40px 10px;
+        }
+
+        ._customer_feedback__container {
+            gap: 30px;
+            grid-template-columns: 2fr 1fr;
+        }
+
+        ._customer_inner_title,
+        ._customer_conditions__title,
+        ._customer_inner_text {
+            margin-bottom: 30px;
+        }
+
+        #ecCalcCityFrom,
+        #ecCalcCityTo,
+        #ecCalcWeight,
+        #ecCalcValue {
+            width: 100% !important;
+            max-width: 90%;
+        }
+
+        ._customer_ak__container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        ._customer_ak {
+            height: 216px;
+        }
+
+        ._customer_ak__text {
+            padding: 25px 25px 0 20px;
+        }
+
+        ._customer_ak__title h2,
+        ._customer_self__title h2 {
+            font-size: 26px;
+        }
+
+        ._customer_ak__title {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (max-width:978px) {
+
+        #ecCalcCityFrom,
+        #ecCalcCityTo,
+        #ecCalcWeight,
+        #ecCalcValue {
+            max-width: 100% !important;
+        }
+
+        .ec-calc .ec-calc-form-delivery,
+        .ec-calc .ec-calc-form-from,
+        .ec-calc .ec-calc-form-pickup,
+        .ec-calc .ec-calc-form-size,
+        .ec-calc .ec-calc-form-to,
+        .ec-calc .ec-calc-form-value,
+        .ec-calc .ec-calc-form-weight {
+            width: 100%;
+        }
+
+        ._customer_inner__table-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        ._customer_self__container {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        ._customer_self__text,
+        ._customer_self__map {
+            -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        }
+
+        ._customer_self__map {
+            max-width: 100%;
+        }
+
+        ._customer_feedback__logo {
+            display: none;
+        }
+
+        ._customer_feedback__container {
+            display: block;
+        }
+
+        ._customer_form__container {
+            padding: 40px;
+        }
+
+        ._customer_form__inputs {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        ._customer_form__input {
+            max-width: 100%;
+        }
+
+        ._customer_ak__container {
+            display: block;
+        }
+
+        ._customer_ak__logo {
+            display: none;
+        }
+
+        ._customer_ak__text {
+            height: 100%;
+            padding: 20px;
+        }
+
+        ._customer_ak {
+            height: auto;
+            overflow: auto;
+        }
+    }
+
+    @media (max-width:767px) {
+        ._customer_inner_title h1 {
+            font-size: 44px;
+        }
+
+        ._customer_inner__subtitle h2,
+        ._customer_conditions__title h2 {
+            font-size: 32px;
+        }
+
+        ._customer_inner_title,
+        ._customer_conditions__title,
+        ._customer_inner_text,
+        ._customer_inner__subtitle,
+        ._customer_inner__table-item-title,
+        ._customer_self__title,
+        ._customer_tk__title,
+        ._customer_self__info span:nth-of-type(1),
+        ._customer_tk__text,
+        ._customer_tk__partners,
+        ._customer_tk__text-info,
+        ._customer_calc-block__text-bold,
+        ._customer_calc-block__text-plain,
+        ._customer_ak__title {
+            margin-bottom: 20px;
+        }
+
+        ._customer_tk__container {
+            padding: 30px;
+        }
+
+        ._customer_calc-block__container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        ._customer_calc-block__text-bold span,
+        ._customer_calc-block__text-plain span {
+            display: inline;
+        }
+
+        ._customer_partners__container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        ._customer_partners-link {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        ._customer_tk__title h2,
+        ._customer_ak__title h2 {
+            line-height: 32px;
+        }
+
+        ._customer_ak__title h2,
+        ._customer_self__title h2 {
+            font-size: 30px;
+        }
+
+    }
+
+    @media (max-width:500px) {
+        ._customer_form__buttons {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        ._customer_form__btn:first-of-type,
+        ._customer_form__btn:last-of-type {
+            max-width: 100% !important;
+        }
+    }
+
+    @media (max-width:480px) {
+
+        ._customer_conditions__container,
+        ._customer_inner__container,
+        ._customer_feedback__container {
+            padding: 20px 10px;
+        }
+
+        ._customer_inner_title h1 {
+            font-size: 32px;
+        }
+
+        ._customer_inner__subtitle h2,
+        ._customer_conditions__title h2 {
+            font-size: 26px;
+        }
+
+        ._customer_inner__table-item-title h2,
+        ._customer_inner_text span {
+            font-size: 18px;
+        }
+
+        ._customer_inner__table-item {
+            padding: 15px;
+        }
+
+        ._customer_inner_title,
+        ._customer_conditions__title,
+        ._customer_inner_text,
+        ._customer_inner__subtitle,
+        ._customer_inner__table-item-title,
+        ._customer_self__title,
+        ._customer_tk__title,
+        ._customer_self__info span:nth-of-type(1),
+        ._customer_tk__text,
+        ._customer_tk__partners,
+        ._customer_tk__text-info,
+        ._customer_calc-block__text-bold,
+        ._customer_calc-block__text-plain {
+            margin-bottom: 10px;
+        }
+
+        ._customer_self__title h2,
+        ._customer_tk__title h2,
+        ._customer_ak__title h2 {
+            font-size: 22px;
+        }
+
+        ._customer_inner__table-item-text span,
+        ._customer_self__info span,
+        ._customer_tk__text span,
+        ._customer_tk__text-info span,
+        ._customer_calc-block__text-bold span,
+        ._customer_calc-block__text-plain span,
+        ._customer_ak__info span {
+            font-size: 14px;
+        }
+
+        ._customer_form__container {
+            padding: 20px;
+        }
+
+        ._customer_form__title h2 {
+            font-size: 22px;
+        }
+
+        ._customer_form__btn:first-of-type,
+        ._customer_form__btn:last-of-type {
+            font-size: 14px !important;
+        }
+
+        ._customer_tk__container,
+        ._customer_self__text {
+            padding: 20px;
+        }
+    }
+
+    @media (max-width:360px) {
+        ._customer_inner_title h1 {
+            font-size: 28px;
+        }
+
+        ._customer_inner__subtitle h2,
+        ._customer_conditions__title h2 {
+            font-size: 24px;
+        }
+
+        ._customer_inner__table-item-title h2,
+        ._customer_inner_text span {
+            font-size: 14px;
+        }
+
+        ._customer_inner__table-item-text span,
+        ._customer_self__info span,
+        ._customer_tk__text span,
+        ._customer_tk__text-info span,
+        ._customer_calc-block__text-bold span,
+        ._customer_calc-block__text-plain span,
+        ._customer_ak__info span {
+            font-size: 12px;
+        }
+
+        ._customer_inner_title,
+        ._customer_conditions__title,
+        ._customer_inner_text,
+        ._customer_inner__subtitle,
+        ._customer_inner__table-item-title,
+        ._customer_self__title,
+        ._customer_tk__title,
+        ._customer_self__info span:nth-of-type(1),
+        ._customer_tk__text,
+        ._customer_tk__partners,
+        ._customer_tk__text-info,
+        ._customer_calc-block__text-bold,
+        ._customer_calc-block__text-plain {
+            margin-bottom: 0;
+        }
+
+        ._customer_self__text,
+        ._customer_tk__container,
+        ._customer_form__container {
+            padding: 15px;
+        }
+
+        ._customer_self__title h2,
+        ._customer_tk__title h2,
+        ._customer_ak__title h2 {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        ._customer_self__info span,
+        ._customer_tk__text span,
+        ._customer_tk__text-info span,
+        ._customer_calc-block__text-bold,
+        ._customer_calc-block__text-plain {
+            margin-bottom: 10px !important;
+        }
+
+        ._customer_self__info span:last-of-type {
+            margin-bottom: 0 !important;
+        }
+
+        ._customer_partners__container {
+            margin-bottom: 10px;
+        }
+
+        .ec-calc .ec-calc__header__text {
+            font-size: 18px !important;
+        }
+
+        ._customer_form__title h2 {
+            font-size: 24px;
+        }
+
+        ._customer_partners__container {
+            grid-template-columns: 1fr;
+        }
+
+        ._customer_ak__title {
+            margin-bottom: 10px;
+        }
+    }
+</style>
+<div class="_customer_hash">
+    <div class="_customer_hash__container">
+        <div class="_customer_delivery">
+            <div class="_customer_delivery__container">
+                <section class="_customer_inner">
+                    <div class="_customer_inner__container">
+                        <div class="_customer_inner_title">
+                            <h1>
+                                Доставка и&nbsp;оплата
+                            </h1>
+                        </div>
+                        <div class="_customer_inner__subtitle">
+                            <h2>
+                                Условия оплаты
+                            </h2>
+                        </div>
+                        <div class="_customer_inner_text">
+                            <span>
+                                Мы сотрудничаем как с&nbsp;физическими, так и&nbsp;с&nbsp;юридическими лицами.
+                            </span>
+                        </div>
+                        <div class="_customer_inner__table">
+                            <div class="_customer_inner__table-container">
+                                <div class="_customer_inner__table-item _customer_inner__table-item-1">
+                                    <div class="_customer_inner__table-item-title">
+                                        <h2>
+                                            Наличный расчет
+                                        </h2>
+                                    </div>
+                                    <div class="_customer_inner__table-item-text">
+                                        <span>
+                                            В том числе, расчет на месте.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="_customer_inner__table-item _customer_inner__table-item-2">
+                                    <div class="_customer_inner__table-item-title">
+                                        <h2>
+                                            Безналичный расчет
+                                        </h2>
+                                    </div>
+                                    <div class="_customer_inner__table-item-text">
+                                        <span>
+                                            С расчётного счёта.
+                                        </span>
+                                        <span>
+                                            Доступна оплата по QR-коду
+                                        </span>
+                                        <span>
+                                            и через терминал.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="_customer_inner__table-item _customer_inner__table-item-3">
+                                    <div class="_customer_inner__table-item-title">
+                                        <h2>
+                                            Рассрочка
+                                        </h2>
+                                    </div>
+                                    <div class="_customer_inner__table-item-text">
+                                        <span>
+                                            Возможна рассрочка
+                                        </span>
+                                        <span>
+                                            от Тиньков до 12 месяцев
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="_customer_conditions">
+                    <div class="_customer_conditions__container">
+                        <div class="_customer_conditions__title">
+                            <h2>
+                                Условия доставки
+                            </h2>
+                        </div>
+                        <div class="_customer_self">
+                            <div class="_customer_self__container">
+                                <div class="_customer_self__text">
+                                    <div class="_customer_self__title">
+                                        <h2>
+                                            Самовывоз
+                                        </h2>
+                                    </div>
+                                    <div class="_customer_self__info">
+                                        <span>
+                                            Забрать заказанный товар самостоятельно можно со&nbsp;склада:
+                                        </span>
+                                        <span>
+                                            г.&nbsp;Челябинск, Троицкий&nbsp;тракт, 21, к5
+                                        </span>
+                                        <span>
+                                            Время работы: пн-пт&nbsp;9:00-18:00
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="_customer_self__map">
+                                    <div class="_customer_self__map-container">
+                                        <iframe
+                                            src="https://yandex.ru/map-widget/v1/?ll=61.385991%2C55.090427&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo0MTE5OTk3ODEyEkTQoNC-0YHRgdC40Y8sINCn0LXQu9GP0LHQuNC90YHQuiwg0KLRgNC-0LjRhtC60LjQuSDRgtGA0LDQutGCLCAyMdC6NSIKDWKJdUIV-FxcQg%2C%2C&z=16.71"
+                                            width="100%" height="100%" frameborder="0" allowfullscreen="true"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_customer_ak">
+                            <div class="_customer_ak__container">
+                                <div class="_customer_ak__logo">
+                                    <img src="/system/ckeditor_assets/pictures/456709/content_ak_logo.png" alt=""
+                                        loading="lazy">
+                                </div>
+                                <div class="_customer_ak__text">
+                                    <div class="_customer_ak__title">
+                                        <h2>
+                                            Доставка автопарком компании
+                                        </h2>
+                                    </div>
+                                    <div class="_customer_ak__info">
+                                        <span>
+                                            Бесплатная доставка по г.&nbsp;Челябинск при заказе от 40&nbsp;000&nbsp;руб.
+                                        </span>
+                                        <span>
+                                            Подробности уточняйте у&nbsp;наших менеджеров.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_customer_tk">
+                            <div class="_customer_tk__container">
+                                <div class="_customer_tk__title">
+                                    <h2>
+                                        Доставка транспортной компанией
+                                    </h2>
+                                </div>
+                                <div class="_customer_tk__text">
+                                    <span>
+                                        Сотрудничаем на постоянной основе со следующими транспортными компаниями:
+                                    </span>
+                                </div>
+                                <div class="_customer_tk__partners _customer_partners">
+                                    <div class="_customer_partners__container">
+                                        <div class="_customer_partners-link"
+                                            onclick="window.open('//magic-trans.ru', '_blank');yaCounter52648651.reachGoal('megasite_page_link_magic-trans_ru'); return true;">
+                                            <div class="_customer_partners__item _customer_partners__item-1">
+                                                <div class="_customer_partners__item-container">
+                                                    <div class="_customer_partners__item-logo">
+                                                        <img src="/system/ckeditor_assets/pictures/438456/content_magic-trans.png"
+                                                            alt="" loading="lazy">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="_customer_partners-link"
+                                            onclick="window.open('//xn----stbeziy.xn--p1ai/', '_blank');yaCounter52648651.reachGoal('megasite_page_link_xn----stbeziy_xn--p1ai'); return true;">
+                                            <div class="_customer_partners__item _customer_partners__item-2">
+                                                <div class="_customer_partners__item-container">
+                                                    <div class="_customer_partners__item-logo">
+                                                        <img src="/system/ckeditor_assets/pictures/438457/content_luch.png"
+                                                            alt="" loading="lazy">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="_customer_partners-link"
+                                            onclick="window.open('//baikalsr.ru', '_blank');yaCounter52648651.reachGoal('megasite_page_link_baikalsr_ru'); return true;">
+                                            <div class="_customer_partners__item _customer_partners__item-3">
+                                                <div class="_customer_partners__item-container">
+                                                    <div class="_customer_partners__item-logo">
+                                                        <img src="/system/ckeditor_assets/pictures/438458/content_bs.png"
+                                                            alt="" loading="lazy">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="_customer_partners-link"
+                                            onclick="window.open('//pecom.ru', '_blank');yaCounter52648651.reachGoal('megasite_page_link_pecom_ru'); return true;">
+                                            <div class="_customer_partners__item _customer_partners__item-4">
+                                                <div class="_customer_partners__item-container">
+                                                    <div class="_customer_partners__item-logo">
+                                                        <img src="/system/ckeditor_assets/pictures/438459/content_pec.png"
+                                                            alt="" loading="lazy">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_customer_tk__text-info">
+                                    <span>
+                                        Стоимость доставки рассчитывается индивидуально.
+                                    </span>
+                                </div>
+                                <div class="_customer_calc-block">
+                                    <div class="_customer_calc-block__container">
+                                        <div class="_customer_calc-block__text">
+                                            <div class="_customer_calc-block__text-bold">
+                                                <span>
+                                                    Здесь вы можете рассчитать
+                                                </span>
+                                                <span>
+                                                    ориентировочную стоимость доставки
+                                                </span>
+                                                <span>
+                                                    с помощью ТК.
+                                                </span>
+                                            </div>
+                                            <div class="_customer_calc-block__text-plain">
+                                                <span>
+                                                    Укажите город, в который будет
+                                                </span>
+                                                <span>
+                                                    производиться доставка, а также вес
+                                                </span>
+                                                <span>
+                                                    и объем груза.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <!-- Calc -->
+                                        <div class="ec-delivery"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="_customer_feedback">
+                    <div class="_customer_feedback__container">
+                        <div class="_customer_form">
+                            <div class="_customer_form__container">
+                                <div class="_customer_form__title">
+                                    <h2>
+                                        Оставьте заявку и&nbsp;получите расчет бесплатно!
+                                    </h2>
+                                </div>
+                                <div class="_customer_form__inputs">
+                                    <input class="_customer_form__input" id="_customerName" placeholder="Ваше имя"
+                                        required="" type="text" name="name" />
+                                    <input class="_customer_form__input" id="_customerPhone" placeholder="Телефон"
+                                        required="" type="tel" />
+                                    <input class="_customer_form__input" id="_customerEmail" placeholder="Почта"
+                                        required="" type="email" />
+                                    <textarea class="_customer_form__textarea" id="_customerMessage"
+                                        placeholder="Ваше сообщение"></textarea>
+                                </div>
+                                <div class="_customer_form__buttons">
+                                    <button
+                                        class="_customer_form__btn _customer_form__btn--file ab-order js-apress-order-button js-get-order-form"
+                                        data-company-contacts-url="/contacts"
+                                        data-company-name="Кровельно-Фасадная Компания"
+                                        data-params='{"company_id":"99673958"}' data-type="message" id="_customerFile"
+                                        onclick="yaCounter52648651.reachGoal('megasite_page_write_us'); return true;">
+                                        Прикрепить файл <img
+                                            src="/system/ckeditor_assets/pictures/438460/content_btn_arrow.png" alt=""
+                                            loading="lazy">
+                                    </button>
+                                    <button
+                                        class="_customer_form__btn _customer_form__btn--submit ab-order js-apress-order-button js-get-order-form"
+                                        data-company-contacts-url="/contacts"
+                                        data-company-name="Кровельно-Фасадная Компания"
+                                        data-params='{"company_id":"99673958"}' data-type="message" id="_customerSubmit"
+                                        onclick="yaCounter52648651.reachGoal('megasite_page_write_us'); return true;">
+                                        Отправить
+                                    </button>
+                                </div>
+                                <p class="_customer-form__confidence">
+                                    Нажимая "Отправить", вы&nbsp;даете согласие на&nbsp;обработку персональных данных
+                                    в&nbsp;соответствии
+                                    с&nbsp;<a href="/confidential">политикой конфиденциальности</a>
+                                    и&nbsp;принимаете условия <a href="/terms">пользовательского соглашения</a>.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_customer_feedback__logo">
+                            <img src="/system/ckeditor_assets/pictures/438461/content_feedback_logo.png" alt=""
+                                loading="lazy">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/assets/custom_assets/imask.js"></script>
+<script async>
+    document.addEventListener("DOMContentLoaded", () => {
+
+        let setImask = (id) => {
+            let element = document.getElementById(id);
+            let maskOptions = {
+                mask: "+7 (000) 000-00-00",
+                lazy: false,
+            };
+            let mask = new IMask(element, maskOptions);
+        }
+
+        setImask("_customerPhone");
+
+        let _customerInputs = document.querySelectorAll("._customer_form__input");
+        setInterval(() => {
+            _customerInputs.forEach((item) => {
+                if (item.value === "" || item.value == "+7 (___) ___-__-__") {
+                    item.style.border = "2px solid #ff6e58";
+                }
+                if (item.value && item.value !== "+7 (___) ___-__-__") {
+                    item.style.border = "2px solid #56c56c";
+                }
+            });
+        }, 1000);
+
+        let _customerSubmitButton = document.getElementById("_customerSubmit");
+        let _customerFileButton = document.getElementById("_customerFile");
+        let _customerFinalMessage = "";
+
+        _customerSubmitButton.disabled = true;
+        _customerFileButton.disabled = true;
+
+        let _customerSendForm = () => {
+            if (_customerSubmitButton.disabled !== true) {
+                _customerFinalMessage = `Добрый день!\nМеня зовут ${document.getElementById("_customerName").value}\n${document.getElementById("_customerMessage").value}`;
+            }
+        }
+
+        let formValidate = () => {
+            _customerSubmitButton.disabled =
+                [...document.querySelectorAll("._customer_form__input:required")].filter((element) => element.value === "" || element.value === 0).length !== 0 ? true : false;
+            _customerFileButton.disabled = _customerSubmitButton.disabled == true ? true : false;
+        }
+
+        document.querySelectorAll("._customer_form__input:required").forEach((element) => {
+            element.addEventListener("change", () => formValidate());
+            element.addEventListener("mouseout", () => formValidate());
+        });
+
+        let openWidget = () => {
+            _customerSendForm();
+            setTimeout(() => {
+                document.querySelector("#order_messages_attributes_0_text").value = _customerFinalMessage;
+                document.querySelector(".js-order-customer-phone-field") === null
+                    ? (document.querySelector("#order_messages_attributes_0_text").value += "\n" + "Телефон: " + document.getElementById("_customerPhone").value)
+                    : (document.querySelector(".js-order-customer-phone-field").value = document.getElementById("_customerPhone").value);
+                document.querySelector(".js-input-email-auth") === null
+                    ? (document.querySelector("#order_messages_attributes_0_text").value += "\n" + "Почта: " + document.getElementById("_customerEmail").value)
+                    : (document.querySelector(".js-input-email-auth").value = document.getElementById("_customerEmail").value);
+            }, 1000);
+        }
+
+        _customerSubmitButton.addEventListener("click", (event) => openWidget());
+
+        _customerFileButton.addEventListener("click", (e) => {
+            openWidget();
+            setTimeout(() => {
+                document.getElementById("order_").click();
+            }, 1000);
+        });
+    });
+</script>
+
+<script id="dcsbl"
+    src="https://dostavka.sbl.su/api/delivery.js?comp=0&startCt=Москва&startCntr=RU&btn=no&dopInsure=1&innerDeliv=1&autoEnd=1"></script>

@@ -1,0 +1,337 @@
+<style type="text/css">
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+  .company-header {
+    background: #fff !important;
+    padding: 0 !important;
+  }
+
+  .company-header__toolbar {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .company-header__menu {
+    margin: 0 !important;
+    padding: 0;
+    top: 12px;
+    left: initial;
+    right: 10px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 0 !important;
+    width: 42px !important;
+    height: 36px !important;
+  }
+
+  .company-header__menu:before {
+    left: 50% !important;
+    top: 50% !important;
+    width: 100% !important;
+    height: 100% !important;
+    transform: translate(-50%, -50%) !important;
+    background: url(/system/ckeditor_assets/pictures/459128/content_burger.png)center center/contain no-repeat !important;
+  }
+
+  .company-header__settings-link {
+    top: 0;
+    right: 0;
+  }
+
+  .company-header__custom-content {
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .company-search-form {
+    display: none;
+  }
+
+  ._customer-m-header * {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif !important;
+  }
+
+  ._customer-m-header {
+    box-sizing: border-box;
+    background: #fff;
+    padding: 10px;
+    position: relative;
+  }
+
+  ._customer-m-header__logo-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  ._customer-m-header__logo {
+    display: flex;
+    max-width: 80px;
+    height: auto;
+  }
+
+  ._customer-m-header__logo img {
+    width: 100%;
+  }
+
+  ._customer-m-header__slogan {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    color: #121212;
+  }
+
+  ._customer-m-header__wrapper {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ._customer-m-header__info {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
+  }
+
+  ._customer-m-header__time {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #121212;
+    padding-left: 17px;
+    position: relative;
+  }
+
+  ._customer-m-header__time::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 12px;
+    height: 12.5px;
+    background: url(/system/ckeditor_assets/pictures/459119/content_clock.png) center center/contain no-repeat;
+  }
+
+  ._customer-m-header__addr {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #121212;
+    padding-left: 17px;
+    position: relative;
+    text-decoration: none;
+  }
+
+  ._customer-m-header__addr::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 12px;
+    height: 15px;
+    background: url(/system/ckeditor_assets/pictures/459120/content_map.png) center center/contain no-repeat;
+  }
+
+  ._customer-m-header__addr:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  ._customer-m-header__contacts {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+
+  ._customer-m-header__phone {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #121212 !important;
+    padding-left: 17px;
+    position: relative;
+    text-decoration: none;
+  }
+
+  ._customer-m-header__phone::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 12px;
+    height: 13px;
+    background: url(/system/ckeditor_assets/pictures/459121/content_phone.png) center center/contain no-repeat;
+  }
+
+  ._customer-m-header__phone:hover {
+    text-decoration: underline;
+  }
+
+  ._customer-m-header__mail {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #121212 !important;
+    padding-left: 17px;
+    position: relative;
+    text-decoration: none;
+  }
+
+  ._customer-m-header__mail::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 13px;
+    height: 10px;
+    background: url(/system/ckeditor_assets/pictures/459122/content_mail.png) center center/contain no-repeat;
+  }
+
+  ._customer-m-header__mail:hover {
+    text-decoration: underline;
+  }
+
+  ._customer-m-header__social {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-right: 8px;
+  }
+
+  ._customer-m-header__social-item {
+    display: flex;
+    width: 24px;
+    height: 24px;
+  }
+
+  ._customer-m-header__social-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  ._customer-m-header__btns {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  ._customer-m-header__btn {
+    max-width: 42px;
+    width: 100%;
+    height: 36px;
+    background: #9a342f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ._customer-m-header__btn img {
+    max-height: 16px;
+    max-width: 17px;
+  }
+
+  ._customer-m-header__search {
+    margin: 0 5px 0 0 !important;
+    max-width: 100%;
+    width: 100%;
+    height: 36px;
+    background: #e4e8ea;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  ._customer-m-header__search input {
+    width: 100%;
+    height: 100% !important;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(18, 18, 18, 0.6);
+  }
+
+  ._customer-m-header__search input::placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(18, 18, 18, 0.6);
+  }
+
+  ._customer-m-header__search-btn {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+  }
+</style>
+<div class="_customer-m-header">
+  <div class="_customer-m-header__logo-wrapper">
+    <a class="_customer-m-header__logo" href="/">
+      <img alt="" src="/system/ckeditor_assets/pictures/459123/content_logo.png" />
+    </a>
+    <div class="_customer-m-header__slogan">
+      Бесплатный <br />
+      замер и расчет!
+    </div>
+  </div>
+  <div class="_customer-m-header__wrapper">
+    <div class="_customer-m-header__info">
+      <div class="_customer-m-header__time">пн-пт 9:00-18:00, сб 10:00-15:00</div>
+      <div class="_customer-m-header__addr"
+        onclick="window.open('//yandex.ru/maps/56/chelyabinsk/house/sverdlovskiy_prospekt_32/YkgYdQ9lQUIFQFtvfX12dHhqZw==/?ll=61.385872%2C55.175494&z=17.08', '_blank');">
+        г. Челябинск, пр. Свердловский, 32
+      </div>
+      <div class="_customer-m-header__contacts">
+        <a class="_customer-m-header__phone" href="tel:+79300359806"
+          onclick="yaCounter52648651.reachGoal('megasite_mobile_tel'); return true;">+7 (930) 035-98-06</a>
+        <a class="_customer-m-header__mail" href="mailto:004@kfk74.ru"
+          onclick="yaCounter52648651.reachGoal('megasite_mobile_mail'); return true;">004@kfk74.ru</a>
+      </div>
+    </div>
+    <div class="_customer-m-header__social">
+      <a href="https://wa.me/79227388439" class="_customer-m-header__social-item">
+        <img src="/system/ckeditor_assets/pictures/459125/content_whats.png" alt="" />
+      </a>
+      <a href="https://vk.com/kfk74" class="_customer-m-header__social-item">
+        <img src="/system/ckeditor_assets/pictures/459124/content_vk.png" alt="" />
+      </a>
+    </div>
+  </div>
+  <div class="_customer-m-header__btns">
+    <form accept-charset="UTF-8" accept-encoding="UTF-8" action="/catalog"
+      class="_customer-m-header__search search-form with-search-icon js-company-search-hints-form" method="get"
+      onsubmit="formSubmitter.disableButtons(this, null, null);">
+      <div style="margin: 0; padding: 0; display: none">
+        <input name="utf8" type="hidden" value="✓" />
+      </div>
+      <input autocomplete="off" class="sf-input js-reset-field js-company-search-hints-input" id="q" maxlenght="255"
+        name="q" placeholder="Найти товар или услугу" type="text" />
+      <button class="_customer-m-header__search-btn" name="commit"
+        onclick="yaCounter52648651.reachGoal('megasite_mobile_search'); return true;" type="submit"
+        value="Поиск"></button>
+    </form>
+    <div class="_customer-m-header__btn ab-order js-apress-order-button js-orders-callback-link"
+      data-app-order-confirm='&lt;p&gt; &lt;span style="font-size:16px;"&gt;Покупка товаров и отслеживание статуса заказа в мобильном приложении.&lt;/span&gt;&lt;/p&gt; &lt;div&gt; &lt;p&gt; В бесплатном приложении Пульса цен более 9 млн товаров и услуг, возможность быстро найти товар, связаться с поставщиком и оформить заказ. &lt;/p&gt; &lt;/div&gt; &lt;p&gt;  &lt;/p&gt;'
+      data-button-type="order_callback" data-company="99673958" data-company-id="99673958"
+      data-company-name="Кровельно-Фасадная Компания" data-company-name-rest=""
+      data-company-url="https://www.kfk174.ru/catalog" data-params='{"company_id":"99673958"}' data-statistics="1"
+      data-type="callback" onclick="yaCounter52648651.reachGoal('megasite_mobile_callback'); return true;">
+      <img src="/system/ckeditor_assets/pictures/459127/content_head.png" alt="" />
+    </div>
+  </div>
+</div>

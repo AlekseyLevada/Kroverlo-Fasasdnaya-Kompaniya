@@ -1,0 +1,269 @@
+<style type="text/css">
+  .custom-company-toolbar {
+    z-index: 105;
+    overflow: visible;
+  }
+  ._customer-toolbar * {
+    font-family: "Montserrat", sans-serif !important;
+    box-sizing: border-box;
+  }
+  ._customer-toolbar {
+    background: #ffffff;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  ._customer-toolbar__container {
+    max-width: 1208px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+  }
+  ._customer-toolbar__logo-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  ._customer-toolbar__logo {
+    display: flex;
+  }
+  ._customer-toolbar__contacts {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #121212;
+    height: auto;
+  }
+  ._customer-toolbar__phone {
+    padding-left: 21px;
+    position: relative;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #121212 !important;
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+  ._customer-toolbar__phone::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background: url("/system/ckeditor_assets/pictures/429040/content_phone.png");
+  }
+  ._customer-toolbar__phone:hover {
+    text-decoration: underline;
+  }
+  ._customer-toolbar__mail {
+    margin-top: 15px;
+    padding-left: 21px;
+    position: relative;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #121212 !important;
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+  ._customer-toolbar__mail::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 16px;
+    height: 13px;
+    background: url("/system/ckeditor_assets/pictures/429041/content_mail.png");
+  }
+  ._customer-toolbar__mail:hover {
+    text-decoration: underline;
+  }
+  ._customer-toolbar__social {
+    margin-left: 30px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+  }
+  ._customer-toolbar__social-item {
+    display: flex;
+    opacity: 1;
+    transition: all 0.3s;
+  }
+  ._customer-toolbar__social-item:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  ._customer-toolbar__menu {
+    max-width: 276px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    column-gap: 10px;
+  }
+  ._customer-toolbar__menu-item {
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  ._customer-toolbar__menu-item a {
+    max-width: max-content;
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #121212 !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  ._customer-toolbar__menu-item a:hover {
+    text-decoration: underline;
+  }
+  ._customer-search__toolbar {
+    margin: auto 0 !important;
+    max-width: 300px;
+    width: 100%;
+    height: 44px;
+    background: #e4e8ea;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    display: flex;
+  }
+  ._customer-search__toolbar ._customer-search__input-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  ._customer-search__toolbar ._customer-search__input {
+    width: 100%;
+    height: 100% !important;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 40px 0 20px;
+    border: none;
+    border-radius: 0;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 17px !important;
+    color: #121212 !important;
+  }
+  ._customer-search__toolbar ._customer-search__input::placeholder {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 17px !important;
+    color: #121212 !important;
+  }
+  ._customer-search__toolbar ._customer-search__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+    display: flex;
+    opacity: 1;
+    transition: all 0.3s;
+  }
+  ._customer-search__toolbar ._customer-search__button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 998px) {
+    ._customer-toolbar {
+      display: none;
+    }
+  }
+</style>
+<div class="_customer-toolbar">
+  <div class="_customer-toolbar__container">
+    <a class="_customer-toolbar__logo" href="/" title="На Главную">
+      <img alt="" src="/system/ckeditor_assets/pictures/429046/content_logo.png" />
+    </a>
+    <div class="_customer-toolbar__menu">
+      <div class="_customer-toolbar__menu-item"><a href="/about">О компании</a></div>
+      <div class="_customer-toolbar__menu-item"><a href="/catalog">Каталог</a></div>
+      <div class="_customer-toolbar__menu-item"><a href="/contacts">Контакты</a></div>
+    </div>
+    <form
+      accept-charset="UTF-8"
+      accept-encoding="UTF-8"
+      action="/catalog"
+      class="_customer-search__toolbar search-form with-search-icon js-company-search-hints-form"
+      method="get"
+      onsubmit="formSubmitter.disableButtons(this, null, null);"
+    >
+      <div style="margin: 0; padding: 0; display: inline">
+        <input name="utf8" type="hidden" value="✓" />
+      </div>
+      <div class="_customer-search__input-wrapper sf-input-wrapper">
+        <input
+          autocomplete="off"
+          class="_customer-search__input sf-input js-reset-field js-company-search-hints-input"
+          id="q"
+          maxlenght="255"
+          name="q"
+          placeholder="Найти товар или услугу"
+          type="text"
+        />
+      </div>
+      <button class="_customer-search__button" name="commit" onclick="yaCounter52648651.reachGoal('megasite_toolbar_search'); return true;" type="submit" value="Поиск">
+        <img src="/system/ckeditor_assets/pictures/429047/content_search.png" alt="" />
+      </button>
+    </form>
+    <div class="_customer-toolbar__contacts">
+      <a class="_customer-toolbar__phone" href="tel:+79300359806" onclick="yaCounter52648651.reachGoal('megasite_toolbar_tel'); return true;">+7 (930) 035-98-06</a>
+      <a class="_customer-toolbar__mail" href="mailto:004@kfk74.ru" onclick="yaCounter52648651.reachGoal('megasite_toolbar_mail'); return true;">004@kfk74.ru</a>
+    </div>
+    <div class="_customer-toolbar__social">
+      <a href="https://wa.me/79227388439" class="_customer-toolbar__social-item"
+        target="_blank"
+        onclick="yaCounter52648651.reachGoal('megasite_toolbar_whatsapp'); return true;">
+        <img src="/system/ckeditor_assets/pictures/458937/content_wa.png" alt="" />
+      </a>
+      <a href="https://vk.com/kfk74" class="_customer-toolbar__social-item"
+        target="_blank"
+        onclick="yaCounter52648651.reachGoal('megasite_toolbar_vk'); return true;">
+        <img src="/system/ckeditor_assets/pictures/458938/content_vk.png" alt="" />
+      </a>
+      <a href="https://www.youtube.com/@Kfk74" class="_customer-toolbar__social-item"
+        target="_blank"
+        onclick="yaCounter52648651.reachGoal('megasite_toolbar_youtube'); return true;">
+        <img src="/system/ckeditor_assets/pictures/458939/content_youtube.png" alt="" />
+      </a>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+      const customSearhForm = document.querySelectorAll(".search-form"),
+        customSearhStyle = document.createElement("style");
+      customSearhStyle.textContent = `.search-form .company-search-hints{display:none}.search-form_opend-hints .company-search-hints{display:block}`;
+      document.querySelector("head").appendChild(customSearhStyle);
+      for (form of customSearhForm) {
+        form.addEventListener("mouseenter", function (e) {
+          e.target.classList.add("search-form_opend-hints");
+        });
+        form.addEventListener("mouseleave", function (e) {
+          e.target.classList.remove("search-form_opend-hints");
+        });
+      }
+    }, 500);
+  });
+</script>

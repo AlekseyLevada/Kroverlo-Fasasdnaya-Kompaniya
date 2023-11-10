@@ -1,0 +1,563 @@
+<link href="/assets/custom_assets/swiper.min.css" rel="stylesheet" />
+<script src="/assets/custom_assets/swiper.min.js"></script>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+  .tmpl-company-all {
+    background: transparent !important;
+  }
+
+  .tmpl-company-content {
+    background: transparent !important;
+  }
+
+  .flat-skin-block .text img {
+    max-width: initial !important;
+  }
+
+  #company-content-wrapper {
+    max-width: 100% !important;
+  }
+
+  .company-header-wrapper {
+    background: transparent !important;
+    z-index: 5;
+  }
+
+  .modern-skin .company-content {
+    max-width: 1208px;
+    margin: 10px auto 0;
+    box-sizing: border-box;
+  }
+
+  .company-medal {
+    display: none;
+  }
+
+  ._customer-header * {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  ._customer-header {
+    padding: 20px 10px 15px;
+  }
+
+  ._customer-header__container {
+    max-width: 1208px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    align-items: center;
+  }
+
+  ._customer-header__logo-wrapper {
+    display: flex;
+    align-items: stretch;
+  }
+
+  ._customer-header__logo {
+    display: flex;
+  }
+
+  ._customer-header__slogan {
+    padding-left: 15px;
+    margin-left: 15px;
+    border-left: 1px solid #121212;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  ._customer-header__slogan span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #121212;
+  }
+
+  ._customer-header__loc {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  ._customer-header__addr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #121212;
+    padding-left: 23px;
+    position: relative;
+    text-decoration: none;
+  }
+
+  ._customer-header__addr::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: url("/system/ckeditor_assets/pictures/429038/content_loc.png");
+  }
+
+  ._customer-header__addr:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  ._customer-header__time {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #121212;
+    padding-left: 23px;
+    position: relative;
+  }
+
+  ._customer-header__time::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background: url("/system/ckeditor_assets/pictures/429039/content_time.png");
+  }
+
+  ._customer-header__contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  ._customer-header__phone {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #121212 !important;
+    padding-left: 23px;
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  ._customer-header__phone::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background: url("/system/ckeditor_assets/pictures/429040/content_phone.png");
+  }
+
+  ._customer-header__phone:hover {
+    text-decoration: underline;
+  }
+
+  ._customer-header__mail {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #121212 !important;
+    padding-left: 23px;
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  ._customer-header__mail::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 16px;
+    height: 14px;
+    background: url("/system/ckeditor_assets/pictures/429041/content_mail.png");
+  }
+
+  ._customer-header__mail:hover {
+    text-decoration: underline;
+  }
+
+  ._customer-header__btns {
+    max-width: 178px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ._customer-header__btn {
+    max-width: 100%;
+    width: 100%;
+    height: 44px;
+    background: #9a342f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 1;
+    transition: all 0.3s;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+
+  ._customer-header__btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  ._customer-header__social {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+  }
+
+  ._customer-header__social-item {
+    display: flex;
+    opacity: 1;
+    transition: all 0.3s;
+  }
+
+  ._customer-header__social-item:hover {
+    opacity: 0.7;
+  }
+
+  /* Search */
+  ._customer-header__search {
+    margin: 0 0 0 15px;
+    max-width: 410px;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    display: flex;
+  }
+
+  ._customer-header__search ._customer-search__input-wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  ._customer-header__search ._customer-search__input {
+    max-width: 100%;
+    width: 100%;
+    height: 44px !important;
+    border-radius: 0;
+    background: #e4e8ea;
+    border: none;
+    outline: none;
+    padding: 0 40px 0 20px;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 17px !important;
+    color: #121212 !important;
+  }
+
+  ._customer-header__search ._customer-search__input::placeholder {
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 17px !important;
+    color: #121212 !important;
+  }
+
+  ._customer-header__search ._customer-search__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    opacity: 1;
+    transition: all 0.3s;
+    display: flex;
+  }
+
+  ._customer-header__search ._customer-search__button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  /* Menu */
+  .modern-skin .horisontal-menu-cover * {
+    box-sizing: border-box;
+  }
+
+  .modern-skin .horisontal-menu-cover {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    background: transparent !important;
+  }
+
+  .modern-skin .menu-bg-ie {
+    max-width: 1208px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border-radius: 10px;
+  }
+
+  .modern-skin .horizontal-menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+    padding: 0;
+  }
+
+  .modern_default .horizontal-menu li:not(.company-horizontal-rubricator__item):first-child::before {
+    display: none;
+  }
+
+  .modern-skin .horizontal-menu::after {
+    display: none !important;
+  }
+
+  .modern-skin .menu-bg-ie .horizontal-menu li {
+    max-width: max-content;
+    height: 100%;
+    border: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+  }
+
+  .menu-bg-ie .horizontal-menu li a {
+    background: transparent !important;
+    border: none;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    width: 100%;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    text-transform: initial !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 17px !important;
+    color: #121212 !important;
+    position: relative;
+    overflow: visible !important;
+    text-decoration: none;
+  }
+
+  .menu-bg-ie .horizontal-menu li:hover,
+  .menu-bg-ie .horizontal-menu li.active {
+    background: transparent !important;
+  }
+
+  .menu-bg-ie .horizontal-menu li:hover a,
+  .menu-bg-ie .horizontal-menu li.active a {
+    color: #9a342f !important;
+    font-weight: 600 !important;
+  }
+
+  .search-form_opend-hints .company-search-hints {
+    right: 0;
+    z-index: 100;
+  }
+
+  .company-search-hints__list .company-search-hints__item .company-search-hints__link {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+
+  .company-search-hints__list .company-search-hints__item .company-search-hints__link:hover {
+    background: #fff !important;
+  }
+
+  .company-search-hints__list .company-search-hints__item .company-search-hints__link:hover {
+    text-decoration: underline !important;
+  }
+
+  .tmpl-company-menu .rubric-list-popup {
+    border: none !important;
+    padding: 10px;
+    left: 0 !important;
+  }
+
+  /* Catalog */
+  .modern-skin .menu-bg-ie .horizontal-menu .company-horizontal-rubricator {
+    position: relative;
+    padding-right: 22px !important;
+  }
+
+  .modern-skin .menu-bg-ie .horizontal-menu .company-horizontal-rubricator::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 12px;
+    height: 9px;
+    background: url("/system/ckeditor_assets/pictures/429090/content_catalog.png");
+  }
+
+  .modern-skin .menu-bg-ie .horizontal-menu .company-horizontal-rubricator:hover::after {
+    background: url("/system/ckeditor_assets/pictures/429089/content_catalog.png");
+  }
+
+  .modern-skin .menu-bg-ie .horizontal-menu .company-horizontal-rubricator__wrapper {
+    left: 0 !important;
+    max-width: 300px;
+    width: 100%;
+    padding: 10px;
+    gap: 0;
+    border-radius: 0;
+  }
+
+  .modern-skin .menu-bg-ie .horizontal-menu .company-horizontal-rubricator__list {
+    gap: 0;
+    row-gap: 10px;
+    max-width: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .modern-skin .menu-bg-ie .horizontal-menu .company-horizontal-rubricator__list .company-horizontal-rubricator__item a:first-child {
+    display: none;
+  }
+
+  .modern-skin .menu-bg-ie .horizontal-menu .company-horizontal-rubricator__list .company-horizontal-rubricator__item a:last-child {
+    color: #121212 !important;
+  }
+
+  .modern-skin .menu-bg-ie .horizontal-menu .company-horizontal-rubricator__list .company-horizontal-rubricator__item a:hover {
+    color: #9a342f !important;
+  }
+
+  @media (max-width: 1200px) {
+    ._customer-header__slogan {
+      display: none;
+    }
+  }
+</style>
+<header class="_customer-header">
+  <div class="_customer-header__container">
+    <div class="_customer-header__logo-wrapper">
+      <a href="/" class="_customer-header__logo">
+        <img src="/system/ckeditor_assets/pictures/429042/content_logo.png" alt="" />
+      </a>
+      <div class="_customer-header__slogan">
+        <span>Бесплатный</span>
+        замер и расчет!
+      </div>
+    </div>
+    <div class="_customer-header__loc">
+      <div class="_customer-header__addr"
+        onclick="window.open('//yandex.ru/maps/56/chelyabinsk/house/sverdlovskiy_prospekt_32/YkgYdQ9lQUIFQFtvfX12dHhqZw==/?ll=61.385872%2C55.175494&z=17.08', '_blank');">
+        г. Челябинск, пр. Свердловский, 32
+      </div>
+      <div class="_customer-header__time">пн-пт 9:00-18:00, сб 10:00-15:00</div>
+    </div>
+    <div class="_customer-header__contacts">
+      <a class="_customer-header__phone" href="tel:+79300359806"
+        onclick="yaCounter52648651.reachGoal('megasite_header_phone'); return true;">+7 (930) 035-98-06</a>
+      <a href="mailto:004@kfk74.ru" class="_customer-header__mail"
+        onclick="yaCounter52648651.reachGoal('megasite_header_mail'); return true;">004@kfk74.ru</a>
+    </div>
+    <div class="_customer-header__btns">
+      <div class="_customer-header__btn ab-order js-apress-order-button js-orders-callback-link"
+        data-app-order-confirm='&lt;p&gt; &lt;span style="font-size:16px;"&gt;Покупка товаров и отслеживание статуса заказа в мобильном приложении.&lt;/span&gt;&lt;/p&gt; &lt;div&gt; &lt;p&gt; В бесплатном приложении Пульса цен более 9 млн товаров и услуг, возможность быстро найти товар, связаться с поставщиком и оформить заказ. &lt;/p&gt; &lt;/div&gt; &lt;p&gt;  &lt;/p&gt;'
+        data-button-type="order_callback" data-company="99673958" data-company-id="99673958"
+        data-company-name="Кровельно-Фасадная Компания" data-company-name-rest=""
+        data-company-url="https://www.kfk174.ru/catalog" data-params='{"company_id":"99673958"}' data-statistics="1"
+        data-type="callback" onclick="yaCounter52648651.reachGoal('megasite_header_callback'); return true;">
+        Заказать звонок
+      </div>
+      <div class="_customer-header__social">
+        <a href="https://wa.me/79227388439" class="_customer-header__social-item" target="_blank"
+          onclick="yaCounter52648651.reachGoal('megasite_header_whatsapp'); return true;">
+          <img src="/system/ckeditor_assets/pictures/458937/content_wa.png" alt="" />
+        </a>
+        <a href="https://vk.com/kfk74" class="_customer-header__social-item" target="_blank"
+          onclick="yaCounter52648651.reachGoal('megasite_header_vk'); return true;">
+          <img src="/system/ckeditor_assets/pictures/458938/content_vk.png" alt="" />
+        </a>
+        <a href="https://www.youtube.com/@Kfk74" class="_customer-header__social-item" target="_blank"
+          onclick="yaCounter52648651.reachGoal('megasite_header_youtube'); return true;">
+          <img src="/system/ckeditor_assets/pictures/458939/content_youtube.png" alt="" />
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let searchParent = document.querySelector(".menu-bg-ie");
+    searchParent.insertAdjacentHTML(
+      "beforeEnd",
+      `
+      <form
+          accept-charset="UTF-8"
+          accept-encoding="UTF-8"
+          action="/catalog"
+          class="_customer-search _customer-header__search search-form with-search-icon js-company-search-hints-form"
+          method="get"
+          onsubmit="formSubmitter.disableButtons(this, null, null);"
+        >
+          <div style="margin: 0; padding: 0; display: inline"><input name="utf8" type="hidden" value="✓" /></div>
+
+          <div class="_customer-search__input-wrapper sf-input-wrapper">
+            <input
+              autocomplete="off"
+              class="_customer-search__input sf-input js-reset-field js-company-search-hints-input"
+              id="q"
+              maxlenght="255"
+              name="q"
+              placeholder="Найти товар или услугу"
+              type="text"
+            />
+          </div>
+          <button class="_customer-search__button" name="commit" onclick="yaCounter52648651.reachGoal('megasite_header_search'); return true;" type="submit" value="Поиск"><img src="/system/ckeditor_assets/pictures/429045/content_search.png" alt=""></button>
+        </form>
+      `
+    );
+
+    setTimeout(() => {
+      const customSearhForm = document.querySelectorAll(".search-form"),
+        customSearhStyle = document.createElement("style");
+      customSearhStyle.textContent = `.search-form .company-search-hints{display:none}.search-form_opend-hints .company-search-hints{display:block}`;
+      document.querySelector("head").appendChild(customSearhStyle);
+      for (form of customSearhForm) {
+        form.addEventListener("mouseenter", function (e) {
+          e.target.classList.add("search-form_opend-hints");
+        });
+        form.addEventListener("mouseleave", function (e) {
+          e.target.classList.remove("search-form_opend-hints");
+        });
+      }
+    }, 500);
+  });
+</script>

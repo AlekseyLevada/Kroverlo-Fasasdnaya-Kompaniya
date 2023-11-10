@@ -1,0 +1,1445 @@
+<!-- Slider -->
+<style type="text/css">
+  .flat-skin-block {
+    border: none !important;
+  }
+
+  .up-scroll-arrow-flat.visible {
+    display: none;
+  }
+
+  ._customer-header__search ._customer-search__input {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  .company-site,
+  .company-site__body,
+  .company-site__header {
+    border-radius: 0 !important;
+  }
+
+  .flat-skin-block.with-bottom,
+  .flat-skin-block .text {
+    padding: 0 !important;
+  }
+
+  .flat-skin-block .header-container,
+  .flat-skin-block.title {
+    display: none !important;
+  }
+
+  .company-content__column-second-wrapper {
+    padding: 0 !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+  }
+
+  .modern-skin .company-content {
+    display: none;
+    padding: 0 !important;
+    max-width: 100% !important;
+    margin-top: 0 !important;
+  }
+
+  ._customer-main__container * {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif !important;
+  }
+
+  ._customer-main__container {
+    max-width: 1208px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  ._customer-slider__main * {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif !important;
+  }
+
+  ._customer-slider__main {
+    margin-top: -165px;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  ._customer-slider {
+    overflow: hidden;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  ._customer-slide {
+    display: flex;
+    height: 1430px;
+    padding: 190px 10px 10px;
+  }
+
+  ._customer-slide-1 {
+    background: url("//pulscenclub.ru/__send/kfk174.ru_99673958/slider/slider-1.png") no-repeat center center / cover;
+  }
+
+  ._customer-slide-2 {
+    background: url("//pulscenclub.ru/__send/kfk174.ru_99673958/slider/slider-2.png") no-repeat center center / cover;
+  }
+
+  ._customer-slide-3 {
+    background: url("//pulscenclub.ru/__send/kfk174.ru_99673958/slider/slider-3.png") no-repeat center center / cover;
+  }
+
+  ._customer-slide-4 {
+    background: url("//pulscenclub.ru/__send/kfk174.ru_99673958/slider/slider-4.png") no-repeat center center / cover;
+  }
+
+  ._customer-slide-5 {
+    background: url("//pulscenclub.ru/__send/kfk174.ru_99673958/slider/slider-5.png") no-repeat center center / cover;
+  }
+
+  ._customer-slide__info {
+    max-width: 1208px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  ._customer-slide__info-wrapper {
+    max-width: max-content;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+  }
+
+  ._customer-slide__title {
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 56px;
+    color: #121212;
+  }
+
+  ._customer-slide__text {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #121212;
+  }
+
+  ._customer-slide__subtitle {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #121212;
+  }
+
+  ._customer-slide__btn {
+    margin-top: 30px;
+    max-width: 121px;
+    width: 100%;
+    height: 44px;
+    background: #9a342f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff !important;
+    opacity: 1;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+
+  ._customer-slide__btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  ._customer-slider__controls {
+    max-width: 1208px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    column-gap: 46px;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
+
+  ._customer-slider__main .swiper-button-prev {
+    position: initial;
+    background: url("/system/ckeditor_assets/pictures/429063/content_slider-arrow.png");
+    width: 23px;
+    height: 40px;
+    transform: rotate(0deg);
+    margin: 0;
+  }
+
+  ._customer-slider__main .swiper-pagination {
+    margin: 0;
+  }
+
+  ._customer-slider__main .swiper-button-next {
+    position: initial;
+    background: url("/system/ckeditor_assets/pictures/429063/content_slider-arrow.png");
+    transform: rotate(180deg);
+    width: 23px;
+    height: 40px;
+    margin: 0;
+  }
+
+  ._customer-slider__main .swiper-button-prev:hover {
+    background: url("/system/ckeditor_assets/pictures/429064/content_slider-arrow-active.png");
+    cursor: pointer;
+    transform: rotate(180deg);
+  }
+
+  ._customer-slider__main .swiper-button-next:hover {
+    cursor: pointer;
+    background: url("/system/ckeditor_assets/pictures/429064/content_slider-arrow-active.png");
+    transform: rotate(0deg);
+  }
+</style>
+<div class="_customer-slider__main">
+  <div class="_customer-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide _customer-slide _customer-slide-1">
+        <div class="_customer-slide__info">
+          <div class="_customer-slide__info-wrapper">
+            <div class="_customer-slide__title">
+              Сайдинг виниловый <br />
+              «Лапландия» Магнолия
+            </div>
+            <div class="_customer-slide__text">
+              При производстве Винилового сайдинга NORDSIDE используется <br />
+              только первичное импортное сырье с высоким содержанием <br />
+              диоксида титана в сочетании с высококачественными красителями, <br />
+              обеспечивает стабильность геометрических характеристик.
+            </div>
+            <div class="_customer-slide__subtitle">235 руб.</div>
+            <a href="/goods/231389999-sayding_vinilovy_laplandiya_magnoliya" class="_customer-slide__btn"
+              onclick="yaCounter52648651.reachGoal('megasite_mainpage_link_catalog_238361306'); return true;">
+              В каталог
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide _customer-slide _customer-slide-2">
+        <div class="_customer-slide__info">
+          <div class="_customer-slide__info-wrapper">
+            <div class="_customer-slide__title">
+              Сэндвич-панель кровельная <br />
+              МВУ 100
+            </div>
+            <div class="_customer-slide__text">
+              Длина: от 0.5м до 16м; Вид по способу применения: <br />
+              Кровельная; Покрытие: полимерное; Толщина: 100мм.
+            </div>
+            <div class="_customer-slide__subtitle">1 230 руб.</div>
+            <a href="/goods/238361306-sendvich_panel_krovelnaya_mvu_100" class="_customer-slide__btn"
+              onclick="yaCounter52648651.reachGoal('megasite_mainpage_link_catalog_117625581'); return true;">
+              В каталог
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide _customer-slide _customer-slide-3">
+        <div class="_customer-slide__info">
+          <div class="_customer-slide__info-wrapper">
+            <div class="_customer-slide__title">
+              Металлочерепица Монтеррей <br />
+              Полиэстер 0,45 мм
+            </div>
+            <div class="_customer-slide__text">
+              Материал: полиэстровая; Производитель: Металл Профиль; <br />
+              Модель по форме черепицы: монтеррей. Завершаете обустройство крыши, <br />
+              но не определились с материалом? Монтеррей Полиэстер - это решение. <br />
+              Металлочерепица Монтеррей Полиэстер применяется в строительстве.
+            </div>
+            <div class="_customer-slide__subtitle">330 руб./кв.м</div>
+            <a href="/goods/117625581-metallocherepitsa_monterrey_poliester_0_45_mm" class="_customer-slide__btn"
+              onclick="yaCounter52648651.reachGoal('megasite_mainpage_link_catalog_177531198'); return true;">
+              В каталог
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide _customer-slide _customer-slide-4">
+        <div class="_customer-slide__info">
+          <div class="_customer-slide__info-wrapper">
+            <div class="_customer-slide__title">
+              Кровля фальцевая Кликфальц <br />
+              Grand Line 0,45 PE с пленкой на замках
+            </div>
+            <div class="_customer-slide__text">
+              Производитель: Grand Line. <br />
+              Преимущество фальцевой кровли Кликфальц - это скрытый способ крепления.<br />
+              Это повышает надёжность и долговечность металлической кровли, так как в ней <br />
+              отсутствуют на рабочей поверхности сквозные отверстия, неизбежные при креплении.
+            </div>
+            <div class="_customer-slide__subtitle">429 руб./кв.м</div>
+            <a href="/goods/177531198-klikfalts_grand_line_0_45_pe_s_plenkoy_na_zamkakh" class="_customer-slide__btn"
+              onclick="yaCounter52648651.reachGoal('megasite_mainpage_link_catalog_171042592'); return true;">
+              В каталог
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide _customer-slide _customer-slide-5">
+        <div class="_customer-slide__info">
+          <div class="_customer-slide__info-wrapper">
+            <div class="_customer-slide__title">
+              Фасадная панель GL <br />
+              Состаренный кирпич Премиум пломбирный
+            </div>
+            <div class="_customer-slide__text">
+              Производитель: Grand Line; Коллекция: Состаренный кирпич; Имитация: кирпич. <br />
+              Фасадные панели производят из тех же материалов, что и сайдинг. <br />
+              Их основа — поливинилхлорид или фиброцемент. <br />
+              Но в отличие от сайдинга фасадные панели более толстые и прочные.
+            </div>
+            <div class="_customer-slide__subtitle">604 руб./шт.</div>
+            <a href="/goods/171042592-fasadnaya_panel_gl_sostarenny_kirpich_premium_plombirny"
+              class="_customer-slide__btn"
+              onclick="yaCounter52648651.reachGoal('megasite_mainpage_link_catalog_231389999'); return true;">
+              В каталог
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="_customer-slider__controls">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+  <script>
+    var sliderMain = new Swiper("._customer-slider", {
+      slidesPerView: 1,
+      grabCursor: true,
+      loop: true,
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: "._customer-slider__main .swiper-button-next",
+        prevEl: "._customer-slider__main .swiper-button-prev",
+      },
+    });
+  </script>
+</div>
+
+<!-- Group block -->
+<style>
+  ._customer-group {
+    padding: 0 10px;
+    position: relative;
+    top: -554px;
+    margin-bottom: -554px;
+    z-index: 1;
+    min-height: 554px;
+  }
+
+  ._customer-group__btn {
+    margin: 40px auto 0;
+    max-width: 154px;
+    width: 100%;
+    height: 44px;
+    background: #9a342f;
+    border-radius: 0;
+    opacity: 1;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff !important;
+    text-decoration: none;
+  }
+
+  ._customer-group__btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  .product-group .pg-amount {
+    display: none !important;
+  }
+
+  .product-group.gallery {
+    align-items: stretch;
+    row-gap: 10px;
+  }
+
+  .product-group.gallery .pg-item.transparent .group__content {
+    background: transparent !important;
+    font-size: 0 !important;
+  }
+
+  .product-group.gallery .pg-item {
+    margin: 0 !important;
+    max-width: 19.3% !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 200px !important;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    transition: all 0.3s;
+    box-shadow: none;
+    position: relative;
+  }
+
+  .product-group.gallery .pg-item:hover .group__content:before {
+    opacity: 1;
+  }
+
+  .product-group.gallery .pg-item:hover .pg-title {
+    padding-bottom: 40px;
+  }
+
+  .product-group.gallery .pg-item:hover .pg-title::before {
+    display: flex;
+  }
+
+  .product-group.gallery .group__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    overflow: hidden;
+  }
+
+  .product-group.gallery .group__content:before {
+    content: "";
+    display: block;
+    width: 110%;
+    height: 110%;
+    background: #fff linear-gradient(0deg, rgba(154, 52, 47, 0.3), rgba(154, 52, 47, 0.3));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+  }
+
+  .product-group.gallery .pg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: transparent;
+    border: none;
+    transition: all 0.3s;
+    overflow: hidden;
+    padding: 10px 10px 50px 10px;
+    z-index: 2;
+  }
+
+  .product-group.gallery .pg-image .image {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .product-group.gallery .pg-image::after {
+    display: none;
+  }
+
+  .product-group.gallery .pg-item:hover .pg-image,
+  .product-group.gallery .pg-item:hover .pg-image img {
+    mix-blend-mode: multiply;
+  }
+
+  .product-group.gallery .pg-title {
+    margin: 0;
+    padding: 10px 0;
+    max-height: initial;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #121212 !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-grow: 1;
+    overflow: visible;
+    position: relative;
+    z-index: 3;
+  }
+
+  .product-group.gallery .pg-title::before {
+    position: absolute;
+    content: "В КАТАЛОГ";
+    bottom: 10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #121212;
+    display: none;
+    align-items: flex-end;
+    justify-content: center;
+    background: url("/system/ckeditor_assets/pictures/429092/content_gr-arrow.png") no-repeat bottom 3px right 50px;
+  }
+
+  .product-group.gallery .pg-title:hover {
+    color: #121212 !important;
+  }
+
+  .product-group.gallery .pg-item.transparent {
+    display: none !important;
+  }
+</style>
+<div class="_customer-group">
+  <div class="_customer-main__container">
+    <div class="_customer-group__wrapper"></div>
+    <a href="/catalog" class="_customer-group__btn">Смотреть все</a>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let groupWrapper = document.querySelector("._customer-group__wrapper");
+    let group = document.querySelector(".product-group");
+    groupWrapper.append(group);
+
+    let itemGroups = document.querySelectorAll(".product-group .pg-item");
+    itemGroups.forEach(item => {
+      item.insertAdjacentHTML("afterbegin", `<div class="group__content"></div>`);
+      let itemContentWrapper = item.querySelector(".group__content");
+      let itemImg = item.querySelector(".pg-image");
+      let itemTitle = item.querySelector(".pg-title");
+      itemContentWrapper.append(itemImg);
+      itemContentWrapper.append(itemTitle);
+    });
+    /*подмена картинок*/
+    function preview(selector, value) {
+      document.querySelectorAll(selector).forEach(function (img) {
+        if (img) {
+          let srcImg = img.getAttribute("data-original") ? img.getAttribute("data-original").replace(value, "_original") : img.getAttribute("src").replace(value, "_original");
+          img.setAttribute("src", srcImg);
+          img.setAttribute("data-original", srcImg);
+        }
+      });
+    }
+    preview(".pg-image img", /_big/);
+    preview(".cpi-image img", /_medium/);
+  });
+</script>
+
+<!-- Products block -->
+<style>
+  ._customer-products {
+    background: #ffffff;
+    padding: 80px 10px;
+  }
+
+  ._customer-products__title {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 51px;
+    color: #121212;
+  }
+
+  ._customer-products__btn {
+    margin: 40px auto 0;
+    max-width: 154px;
+    width: 100%;
+    height: 44px;
+    background: #9a342f;
+    border-radius: 0;
+    opacity: 1;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff !important;
+    text-decoration: none;
+  }
+
+  ._customer-products__btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  ._customer-products__wrapper {
+    margin-top: 60px;
+  }
+
+  .company-products {
+    margin: 0;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: stretch;
+    row-gap: 10px;
+  }
+
+  .company-product-item.gallery {
+    margin: 0 !important;
+    max-width: 19.3% !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 348px !important;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    transition: all 0.3s;
+    box-shadow: none;
+    position: relative;
+  }
+
+  .company-product-item.gallery:hover .item__content {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .company-product-item.gallery .item__content {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #e4e8ea;
+    transition: all 0.3s;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .company-product-item.gallery.transparent {
+    display: none;
+  }
+
+  .tdn {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    order: -1;
+  }
+
+  .company-product-item.gallery .cpi-image {
+    max-width: 100%;
+    width: 100%;
+    max-height: initial;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 0;
+    border-bottom: 1px solid #e4e8ea;
+    overflow: hidden;
+  }
+
+  .company-product-item.gallery .cpi-image .image {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .company-product-item .cpi-name {
+    margin: 0;
+    padding: 20px 10px 0;
+    display: flex;
+    max-height: 54px;
+    height: auto;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #121212 !important;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .company-product-item .cpi-name span {
+    font-size: 16px !important;
+  }
+
+  .company-product-item .price.wholesale {
+    display: none;
+  }
+
+  .company-product-item .price {
+    display: none;
+    margin: 15px 0;
+    padding: 0 18px;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .company-product-item .price .bp-price,
+  .company-product-item .price .price-currency {
+    font-size: 18px;
+  }
+
+  .company-product-item .mt15 {
+    padding: 0 10px;
+    margin: auto 0 20px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .company-product-item .mt15 span {
+    margin: 0 !important;
+    max-width: 100%;
+    width: 100% !important;
+    height: 44px !important;
+    min-width: initial !important;
+    background: #9a342f !important;
+    border-radius: 0 !important;
+    border: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    font-weight: 500 !important;
+    color: #ffffff !important;
+    text-transform: initial !important;
+    opacity: 1 !important;
+    transition: all 0.3s !important;
+  }
+
+  .company-product-item .apress-button:not(.aui-button).flat:hover {
+    background: #9a342f !important;
+    opacity: 0.7 !important;
+  }
+
+  .company-product-item .mt15 .tmpl-company-button-cart {
+    margin: 0 0 0 5px !important;
+    max-width: 99px;
+    min-width: 40px !important;
+    width: 100% !important;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e4e8ea !important;
+    border: none !important;
+    border-radius: 0 !important;
+    opacity: 1 !important;
+    font-size: 0 !important;
+    transition: all 0.3s;
+  }
+
+  .company-product-item .mt15 .tmpl-company-button-cart.flat.icon:hover {
+    background: #e4e8ea !important;
+    opacity: 0.7 !important;
+  }
+
+  .company-product-item .mt15 .tmpl-company-button-cart::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: #e4e8ea url("/system/ckeditor_assets/pictures/429093/content_cart.png") no-repeat center center !important;
+  }
+
+  .company-product-item .mt15 .tmpl-company-button-cart:hover:before {
+    background: #e4e8ea url("/system/ckeditor_assets/pictures/429093/content_cart.png") no-repeat center center !important;
+  }
+
+  .apress-button:not(.aui-button).flat.icon:after {
+    display: none;
+  }
+</style>
+<div class="_customer-products">
+  <div class="_customer-main__container">
+    <div class="_customer-products__title">Наши предложения</div>
+    <div class="_customer-products__wrapper"></div>
+    <a href="/catalog" class="_customer-products__btn">Смотреть все</a>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let productsWrapper = document.querySelector("._customer-products__wrapper");
+    let products = document.querySelector(".company-products");
+    productsWrapper.append(products);
+
+    let itemProducts = document.querySelectorAll(".company-products .company-product-item");
+    itemProducts.forEach(item => {
+      item.insertAdjacentHTML("afterbegin", `<div class="item__content"></div>`);
+      let itemContentWrapper = item.querySelector(".item__content");
+      let itemPriceCur = item.querySelector(".wholesale");
+      let itemPrice = item.querySelector(".price");
+      let itemBtn = item.querySelector(".mt15");
+      if (itemBtn) {
+        let span = itemBtn.querySelector("span");
+        span.innerHTML = "Заказать";
+      }
+
+      let itemContent = item.querySelectorAll(".tdn");
+      itemContent.forEach(itemC => {
+        itemContentWrapper.append(itemC);
+      });
+
+      itemContentWrapper.append(itemBtn);
+    });
+  });
+</script>
+
+<!-- Order block -->
+<style>
+  ._customer-order {
+    padding: 80px 10px;
+    background: #e4e8ea;
+  }
+
+  ._customer-order__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  ._customer-order__form {
+    max-width: 811px;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 60px 50px;
+  }
+
+  ._customer-order__img {
+    display: flex;
+    margin-right: 40px;
+  }
+
+  ._customer-order__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #121212;
+  }
+
+  ._customer-order__form-items {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  ._customer-order__form-item {
+    max-width: 32.5%;
+    width: 100%;
+    height: 44px;
+    border: 1px solid #e4e8ea;
+    border-radius: 0;
+    padding: 0 20px;
+    background: #e4e8ea;
+    display: flex;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(18, 18, 18, 0.3);
+  }
+
+  ._customer-order__form-item::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(18, 18, 18, 0.3);
+  }
+
+  ._customer-order__form-btns {
+    margin-top: 20px;
+    max-width: 358px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  ._customer-order__add {
+    max-width: 100%;
+    width: 100%;
+    height: 44px;
+    border: 1px solid #9a342f;
+    background: transparent;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: all 0.3s;
+  }
+
+  ._customer-order__add span {
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #9a342f;
+  }
+
+  ._customer-order__add:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  ._customer-order__btn {
+    max-width: 131px;
+    width: 100%;
+    height: 44px;
+    flex-grow: 1;
+    background: #9a342f;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: all 0.3s;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+
+  ._customer-order__btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  ._customer-order__add.disable {
+    background: #d6d6d6 !important;
+    color: #888888 !important;
+    border: none;
+    cursor: not-allowed !important;
+    opacity: 1;
+    box-shadow: none !important;
+  }
+
+  ._customer-order__add.disable span {
+    color: #888888 !important;
+  }
+
+  ._customer-order__btn.disable {
+    background: #d6d6d6 !important;
+    color: #888888 !important;
+    border: none;
+    cursor: not-allowed !important;
+    opacity: 1;
+    box-shadow: none !important;
+  }
+
+  ._customer-order__confidence {
+    max-width: 800px;
+    width: 100%;
+    color: #121212;
+    font: 400 12px/1.4 "Montserrat", sans-serif !important;
+    text-align: left;
+    margin: 20px auto 0 !important;
+  }
+
+  ._customer-order__confidence a {
+    color: #121212 !important;
+    text-decoration: underline !important;
+  }
+
+  ._customer-order__confidence a:hover {
+    text-decoration: none !important;
+  }
+
+  @media (max-width: 1200px) {
+    ._customer-order__img {
+      display: none;
+    }
+
+    ._customer-order__form {
+      max-width: 100%;
+    }
+  }
+</style>
+<div class="_customer-order">
+  <div class="_customer-main__container">
+    <div class="_customer-order__wrapper">
+      <div class="_customer-order__form">
+        <div class="_customer-order__title">Оставьте заявку и получите расчет бесплатно!</div>
+        <div class="_customer-order__form-items">
+          <input class="_customer-order__form-item" id="_customerName" placeholder="Ваше имя" required="" type="text" />
+          <input class="_customer-order__form-item js-phoneMask" id="_customerPhone" placeholder="Телефон" required=""
+            type="tel" />
+          <input class="_customer-order__form-item" id="_customerEmail" placeholder="Почта" required="" type="email" />
+        </div>
+        <div class="_customer-order__form-btns">
+          <div class="_customer-order__add ab-order js-apress-order-button js-get-order-form"
+            data-company-contacts-url="https://www.kfk174.ru/contacts" data-company-name="Кровельно-Фасадная Компания"
+            data-params='{"company_id":"99673958"}' data-type="message" id="_customerFile"
+            onclick="yaCounter52648651.reachGoal('megasite_mainpage_write_us'); return true;">
+            <span>Прикрепить файл</span>
+            <img src="/system/ckeditor_assets/pictures/429065/content_add.png" alt="" />
+          </div>
+          <div class="_customer-order__btn ab-order js-apress-order-button js-get-order-form"
+            data-company-contacts-url="https://www.kfk174.ru/contacts" data-company-name="Кровельно-Фасадная Компания"
+            data-params='{"company_id":"99673958"}' data-type="message" id="_customerSubmit"
+            onclick="yaCounter52648651.reachGoal('megasite_mainpage_write_us'); return true;">
+            Отправить
+          </div>
+        </div>
+        <p class="_customer-order__confidence">
+          Нажимая "Отправить", вы&nbsp;даете согласие на&nbsp;обработку персональных данных в&nbsp;соответствии
+          с&nbsp;<a href="/confidential">политикой конфиденциальности</a> и&nbsp;принимаете
+          условия <a href="/terms">пользовательского соглашения</a>.
+        </p>
+      </div>
+      <div class="_customer-order__img">
+        <img src="/system/ckeditor_assets/pictures/429066/content_order-img.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let _customerSubmitButton = document.querySelector("#_customerSubmit");
+    let _customerFile = document.querySelector("#_customerFile");
+    let _customerFinalMessage = "";
+
+    _customerSubmitButton.disabled == true;
+    _customerSubmitButton.classList.add("disable");
+
+    _customerFile.disabled == true;
+    _customerFile.classList.add("disable");
+
+    function _customerSendForm() {
+      if (_customerSubmitButton.disabled !== true && _customerFile.disabled !== true) {
+        _customerFinalMessage = `Добрый день!\nИмя: ${document.querySelector("#_customerName").value}\nПочта: ${document.querySelector("#_customerEmail").value}\nТелефон: ${document.querySelector("#_customerPhone").value
+          }`;
+      }
+    }
+
+    function formValidate() {
+      if (event.target.value !== "") {
+        event.target.style.borderColor = "#e4e8ea";
+      } else {
+        event.target.style.borderColor = "red";
+      }
+      _customerSubmitButton.disabled =
+        [...document.querySelectorAll("._customer-order__form-item:required")].filter(element => element.value === "" || element.value === 0).length !== 0 ? true : false;
+
+      _customerFile.disabled = [...document.querySelectorAll("._customer-order__form-item:required")].filter(element => element.value === "" || element.value === 0).length !== 0 ? true : false;
+    }
+
+    document.querySelectorAll("._customer-order__form-item:required").forEach(element => {
+      element.addEventListener("change", () => {
+        formValidate();
+        if (_customerSubmitButton.disabled !== true && _customerFile.disabled !== true) {
+          _customerSubmitButton.classList.remove("disable");
+          _customerFile.classList.remove("disable");
+        }
+      });
+      element.addEventListener("mouseout", () => {
+        formValidate();
+        if (_customerSubmitButton.disabled !== true && _customerFile.disabled !== true) {
+          _customerSubmitButton.classList.remove("disable");
+          _customerFile.classList.remove("disable");
+        }
+      });
+    });
+
+    function openWidget() {
+      _customerSendForm();
+      setTimeout(() => {
+        document.querySelector("#order_messages_attributes_0_text").value = _customerFinalMessage;
+        document.querySelector(".js-input-email-auth") === null
+          ? (document.querySelector("#order_messages_attributes_0_text").value += "\n" + "Почта: " + document.querySelector("#_customerEmail").value)
+          : (document.querySelector(".js-input-email-auth").value = document.querySelector("#_customerEmail").value);
+      }, 1000);
+    }
+
+    _customerSubmitButton.addEventListener("click", function (event) {
+      openWidget();
+    });
+
+    _customerFile.addEventListener("click", () => {
+      setTimeout(() => {
+        document.getElementById("order_").click();
+      }, 1000);
+    });
+
+    let callFormTel = document.querySelectorAll(".js-phoneMask");
+
+    Array.prototype.forEach.call(callFormTel, function (input) {
+      let keyCode;
+
+      function mask(event) {
+        event.keyCode && (keyCode = event.keyCode);
+        let pos = this.selectionStart;
+        if (pos < 3) event.preventDefault();
+        let matrix = "+7 (___) ___ __ __",
+          i = 0,
+          def = matrix.replace(/\D/g, ""),
+          val = this.value.replace(/\D/g, ""),
+          new_value = matrix.replace(/[_\d]/g, function (a) {
+            return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
+          });
+        i = new_value.indexOf("_");
+        if (i !== -1) {
+          i < 5 && (i = 3);
+          new_value = new_value.slice(0, i);
+        }
+        let reg = matrix
+          .substr(0, this.value.length)
+          .replace(/_+/g, function (a) {
+            return "\\d{1," + a.length + "}";
+          })
+          .replace(/[+()]/g, "\\$&");
+        reg = new RegExp("^" + reg + "$");
+        if (!reg.test(this.value) || this.value.length < 5 || (keyCode > 47 && keyCode < 58)) this.value = new_value;
+        if (event.type === "blur" && this.value.length < 5) this.value = "";
+      }
+
+      input.addEventListener("input", mask, false);
+      input.addEventListener("focus", mask, false);
+      input.addEventListener("blur", mask, false);
+      input.addEventListener("keydown", mask, false);
+    });
+  });
+</script>
+
+<!-- Adva block -->
+<div class="_customer-adva"></div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let advaWrapper = document.querySelector("._customer-adva");
+    let adva = document.querySelector("._customer-adva__inner");
+    advaWrapper.append(adva);
+  });
+</script>
+
+<!-- About block -->
+<style>
+  ._customer-about {
+    padding: 80px 10px;
+    background: #e4e8ea;
+  }
+
+  ._customer-about__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  ._customer-about__title {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 51px;
+    color: #121212;
+  }
+
+  ._customer-about__text {
+    margin-top: 60px;
+  }
+
+  ._customer-about__text-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(18, 18, 18, 0.9);
+  }
+
+  ._customer-about__text-item--mt {
+    margin-top: 20px;
+  }
+
+  ._customer-about__text-list {
+    margin-top: 20px;
+  }
+
+  ._customer-about__text-list_item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(18, 18, 18, 0.9);
+    position: relative;
+    padding-left: 25px;
+  }
+
+  ._customer-about__text-list_item::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    width: 2px;
+    height: 2px;
+    border-radius: 100%;
+    background: rgba(18, 18, 18, 0.9);
+  }
+
+  ._customer-about__btn {
+    margin-top: 40px;
+    max-width: 182px;
+    width: 100%;
+    height: 44px;
+    background: #9a342f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 1;
+    transition: all 0.3s;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+
+  ._customer-about__btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  ._customer-about__slider {
+    max-width: 393px;
+    width: 100%;
+  }
+
+  ._customer-about__slider-wrapper {
+    margin-top: 30px;
+    overflow: hidden;
+    height: 286px;
+  }
+
+  .__customer-about__slide {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .__customer-about__slide img {
+    max-width: 100%;
+  }
+
+  ._customer-about__slider-controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  ._customer-about .swiper-button-prev {
+    position: initial;
+    background: url("/system/ckeditor_assets/pictures/429067/content_about-slider-arrow.png");
+    width: 11px;
+    height: 20px;
+    transform: rotate(0deg);
+    margin: 0;
+  }
+
+  ._customer-about .swiper-button-next {
+    position: initial;
+    background: url("/system/ckeditor_assets/pictures/429067/content_about-slider-arrow.png");
+    transform: rotate(180deg);
+    width: 11px;
+    height: 20px;
+    margin: 0;
+  }
+
+  ._customer-about .swiper-button-prev:hover {
+    background: url("/system/ckeditor_assets/pictures/429068/content_about-slider-arrow-active.png");
+    cursor: pointer;
+    transform: rotate(180deg);
+  }
+
+  ._customer-about .swiper-button-next:hover {
+    cursor: pointer;
+    background: url("/system/ckeditor_assets/pictures/429068/content_about-slider-arrow-active.png");
+    transform: rotate(0deg);
+  }
+
+  .swiper-pagination {
+    margin-top: 30px;
+    position: initial;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .swiper-pagination-bullet {
+    margin: 0 !important;
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #9a342f;
+    width: 12px;
+    height: 12px;
+  }
+</style>
+<div class="_customer-about">
+  <div class="_customer-main__container">
+    <div class="_customer-about__wrapper">
+      <div class="_customer-about__info">
+        <div class="_customer-about__title">О компании</div>
+        <div class="_customer-about__text">
+          <div class="_customer-about__text-item">КФК - Кровельно-фасадная компания.</div>
+          <div class="_customer-about__text-item _customer-about__text-item--mt">
+            У нас вы найдете все необходимые материалы высокого качества для строительства зданий <br />
+            и монтажа кровель и фасадов, от известных российских и мировых производителей.
+          </div>
+          <div class="_customer-about__text-list">
+            <div class="_customer-about__text-list_item">Более 600 кровель монтируются из наших материалов каждый год
+            </div>
+            <div class="_customer-about__text-list_item">1100 фасадов смонтировано за 2022 год</div>
+            <div class="_customer-about__text-list_item">Собственное производство сэндвич-панелей и фиброцементных плит
+            </div>
+            <div class="_customer-about__text-list_item">Произвели более 150 000 м2 сэндвич панелей</div>
+            <div class="_customer-about__text-list_item">18 специалистов в команде, которые постоянно повышают свою
+              квалификацию</div>
+            <div class="_customer-about__text-list_item">ТОП дистрибьюторы крупнейших заводов России</div>
+          </div>
+          <div class="_customer-about__text-item _customer-about__text-item--mt">
+            Покупая материалы в КФК, вы получаете качественную консультацию от наших специалистов <br />
+            с бесплатным замером объекта и детальным расчетом стоимости материалов.
+          </div>
+        </div>
+        <div class="_customer-about__btn ab-order js-apress-order-button js-orders-callback-link"
+          data-app-order-confirm='&lt;p&gt; &lt;span style="font-size:16px;"&gt;Покупка товаров и отслеживание статуса заказа в мобильном приложении.&lt;/span&gt;&lt;/p&gt; &lt;div&gt; &lt;p&gt; В бесплатном приложении Пульса цен более 9 млн товаров и услуг, возможность быстро найти товар, связаться с поставщиком и оформить заказ. &lt;/p&gt; &lt;/div&gt; &lt;p&gt;  &lt;/p&gt;'
+          data-button-type="order_callback" data-company="99673958" data-company-id="99673958"
+          data-company-name="Кровельно-Фасадная Компания" data-company-name-rest=""
+          data-company-url="https://www.kfk174.ru/catalog" data-params='{"company_id":"99673958"}' data-statistics="1"
+          data-type="callback" onclick="yaCounter52648651.reachGoal('megasite_mainpage_callback'); return true;">
+          Получить расчет
+        </div>
+      </div>
+      <div class="_customer-about__slider">
+        <div class="_customer-about__slider-controls">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="_customer-about__slider-wrapper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide __customer-about__slide">
+              <img src="/system/ckeditor_assets/pictures/436954/content_1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide __customer-about__slide">
+              <img src="/system/ckeditor_assets/pictures/436955/content_2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide __customer-about__slide">
+              <img src="/system/ckeditor_assets/pictures/436956/content_3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide __customer-about__slide">
+              <img src="/system/ckeditor_assets/pictures/436957/content_4.jpg" alt="" />
+            </div>
+            <div class="swiper-slide __customer-about__slide">
+              <img src="/system/ckeditor_assets/pictures/436958/content_5.jpg" alt="" />
+            </div>
+            <div class="swiper-slide __customer-about__slide">
+              <img src="/system/ckeditor_assets/pictures/436959/content_6.jpg" alt="" />
+            </div>
+            <div class="swiper-slide __customer-about__slide">
+              <img src="/system/ckeditor_assets/pictures/436960/content_7.jpg" alt="" />
+            </div>
+            <div class="swiper-slide __customer-about__slide">
+              <img src="/system/ckeditor_assets/pictures/436961/content_8.jpg" alt="" />
+            </div>
+            <div class="swiper-slide __customer-about__slide">
+              <img src="/system/ckeditor_assets/pictures/436962/content_9.jpg" alt="" />
+            </div>
+            <div class="swiper-slide __customer-about__slide">
+              <img src="/system/ckeditor_assets/pictures/436963/content_10.jpg" alt="" />
+            </div>
+            <div class="swiper-slide __customer-about__slide">
+              <img src="/system/ckeditor_assets/pictures/436964/content_11.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var sliderMain = new Swiper("._customer-about__slider-wrapper", {
+    slidesPerView: 1,
+    grabCursor: true,
+    loop: true,
+    keyboard: {
+      enabled: true,
+    },
+    pagination: {
+      el: "._customer-about .swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: "._customer-about .swiper-button-next",
+      prevEl: "._customer-about .swiper-button-prev",
+    },
+  });
+</script>

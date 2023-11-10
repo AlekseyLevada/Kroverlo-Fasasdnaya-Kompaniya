@@ -1,0 +1,403 @@
+<!-- Footer -->
+<style>
+  .fc-top {
+    padding: 0 !important;
+  }
+  .footer-container {
+    margin: 0 !important;
+  }
+  .footer-company .fc-top.with-text-zone {
+    display: none;
+  }
+  ._customer-footer * {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  ._customer-footer {
+    background: #2b2a29;
+    padding: 70px 10px 60px;
+  }
+  ._customer-footer__container {
+    max-width: 1208px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  ._customer-footer__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+  }
+  ._customer-footer__logo-wrapper {
+    display: flex;
+    align-items: stretch;
+  }
+  ._customer-footer__logo {
+    display: flex;
+  }
+  ._customer-footer__slogan {
+    margin-left: 15px;
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #ffffff;
+    border-left: 1px solid #ffffff;
+    display: flex;
+    align-items: center;
+  }
+  ._customer-footer__loc {
+    display: flex;
+    flex-direction: column;
+  }
+  ._customer-footer__addr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    padding-left: 23px;
+    position: relative;
+    text-decoration: none;
+  }
+  ._customer-footer__addr::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: url("/system/ckeditor_assets/pictures/429048/content_loc.png");
+    text-decoration: none;
+  }
+  ._customer-footer__addr:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  ._customer-footer__time {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    padding-left: 23px;
+    position: relative;
+  }
+  ._customer-footer__time::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background: url("/system/ckeditor_assets/pictures/429049/content_time.png");
+    text-decoration: none;
+  }
+  ._customer-footer__contacts {
+    display: flex;
+    flex-direction: column;
+  }
+  ._customer-footer__phones {
+    display: flex;
+    flex-direction: column;
+  }
+  ._customer-footer__phone {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff !important;
+    padding-left: 23px;
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  ._customer-footer__phone::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background: url("/system/ckeditor_assets/pictures/429050/content_phone.png");
+    text-decoration: none;
+  }
+  ._customer-footer__phone:hover {
+    text-decoration: underline;
+  }
+  ._customer-footer__mail {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff !important;
+    padding-left: 23px;
+    position: relative;
+    text-decoration: none;
+  }
+  ._customer-footer__mail::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 17px;
+    height: 14px;
+    background: url("/system/ckeditor_assets/pictures/429051/content_mail.png");
+    text-decoration: none;
+  }
+  ._customer-footer__mail:hover {
+    text-decoration: underline;
+  }
+  ._customer-footer__btns {
+    max-width: 178px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  ._customer-footer__btn {
+    max-width: 100%;
+    width: 100%;
+    height: 44px;
+    background: #e4e8ea;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 1;
+    transition: all 0.3s;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #121212 !important;
+  }
+  ._customer-footer__btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  ._customer-footer__social {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  ._customer-footer__social-item {
+    display: flex;
+    opacity: 1;
+    transition: all 0.3s;
+  }
+  ._customer-footer__social-item:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  ._customer-footer__menu {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ._customer-footer__menu-item {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff !important;
+    text-decoration: none;
+  }
+  ._customer-footer__menu-item:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 1200px) {
+    ._customer-footer__menu-item {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+    ._customer-footer__slogan {
+      display: none;
+    }
+  }
+</style>
+<footer class="_customer-footer" itemscope itemtype="http://schema.org/LocalBusiness">
+  <div class="_customer-footer__container">
+    <div class="_customer-footer__info">
+      <div class="_customer-footer__logo-wrapper">
+        <a href="/" class="_customer-footer__logo">
+          <img itemprop="logo" src="/system/ckeditor_assets/pictures/429052/content_logo.png" alt="" />
+        </a>
+        <div class="_customer-footer__slogan">
+          Бесплатный замер <br />
+          и расчет!
+        </div>
+      </div>
+      <div class="_customer-footer__loc">
+        <div
+          class="_customer-footer__addr"
+          onclick="window.open('//yandex.ru/maps/56/chelyabinsk/house/sverdlovskiy_prospekt_32/YkgYdQ9lQUIFQFtvfX12dHhqZw==/?ll=61.385872%2C55.175494&z=17.08', '_blank');"
+          itemscope itemtype="http://schema.org/PostalAddress" itemprop="address"
+        >
+           <span itemprop="addressLocality"> г.&nbsp;Челябинск </span>,
+           <span itemprop="streetAddress"> пр.&nbsp;Свердловский,&nbsp;32 </span>
+        </div>
+        <div class="_customer-footer__time" itemprop="openingHours" content="Mo,Tu,We,Th,Fr 09:00-18:00, Sa 10:00-15:00">пн-пт 9:00-18:00, сб 10:00-15:00</div>
+      </div>
+      <div class="_customer-footer__contacts">
+        <a class="_customer-footer__phone" href="tel:+79300359806" onclick="yaCounter50429671.reachGoal('megasite_footer_phone'); return true;" itemprop="telephone">+7 (930) 035-98-06</a>
+        <a href="mailto:004@kfk74.ru" class="_customer-footer__mail" onclick="yaCounter50429671.reachGoal('megasite_footer_mail'); return true;" itemprop="email">004@kfk74.ru</a>
+      </div>
+      <div class="_customer-footer__btns">
+        <div
+          class="_customer-footer__btn ab-order js-apress-order-button js-orders-callback-link"
+          data-app-order-confirm='&lt;p&gt; &lt;span style="font-size:16px;"&gt;Покупка товаров и отслеживание статуса заказа в мобильном приложении.&lt;/span&gt;&lt;/p&gt; &lt;div&gt; &lt;p&gt; В бесплатном приложении Пульса цен более 9 млн товаров и услуг, возможность быстро найти товар, связаться с поставщиком и оформить заказ. &lt;/p&gt; &lt;/div&gt; &lt;p&gt;  &lt;/p&gt;'
+          data-button-type="order_callback"
+          data-company="99673958"
+          data-company-id="99673958"
+          data-company-name="Кровельно-Фасадная Компания"
+          data-company-name-rest=""
+          data-company-url="https://www.kfk174.ru/catalog"
+          data-params='{"company_id":"99673958"}'
+          data-statistics="1"
+          data-type="callback"
+          onclick="yaCounter52648651.reachGoal('megasite_footer_callback'); return true;"
+        >
+          Заказать звонок
+        </div>
+        <div class="_customer-footer__social">
+          <a href="https://wa.me/79227388439" class="_customer-footer__social-item" 
+            target="_blank"
+            onclick="yaCounter52648651.reachGoal('megasite_footer_whatsapp'); return true;"
+          >
+            <img src="/system/ckeditor_assets/pictures/458937/content_wa.png" alt="" />
+          </a>
+          <a href="https://vk.com/kfk74" class="_customer-footer__social-item"
+            target="_blank"
+            onclick="yaCounter52648651.reachGoal('megasite_footer_vk'); return true;">
+            <img src="/system/ckeditor_assets/pictures/458938/content_vk.png" alt="" />
+          </a>
+          <a href="https://www.youtube.com/@Kfk74" class="_customer-footer__social-item"
+            target="_blank"
+            onclick="yaCounter52648651.reachGoal('megasite_footer_youtube'); return true;">
+            <img src="/system/ckeditor_assets/pictures/458939/content_youtube.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="_customer-footer__menu">
+      <a href="/" class="_customer-footer__menu-item">Главная</a>
+      <a href="/catalog" class="_customer-footer__menu-item">Каталог</a>
+      <a href="/about" class="_customer-footer__menu-item">О компании</a>
+      <a href="/delivery" class="_customer-footer__menu-item">Доставка и оплата</a>
+      <a href="/contacts" class="_customer-footer__menu-item">Контакты</a>
+    </div>
+  </div>
+  <meta itemprop="name" content="Кровельно-Фасадная Компания">
+</footer>
+<!-- Footer end -->
+<!-- Advantages block style -->
+<style>
+  .company-product-card-block_editor-content img {
+    max-width: initial;
+  }
+  .company-about__section ._customer-adva__container *,
+  .company-product-card-block ._customer-adva__container * {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif !important;
+  }
+  .company-about__section ._customer-adva__inner,
+  .company-product-card-block ._customer-adva__inner {
+    padding: 0;
+    background: none;
+  }
+  .company-about__section ._customer-adva__title,
+  .company-product-card-block ._customer-adva__title {
+    display: none;
+  }
+  .company-about__section ._customer-adva__wrapper,
+  .company-product-card-block ._customer-adva__wrapper {
+    margin: 0;
+  }
+  .company-about__section ._customer-adva__item,
+  .company-product-card-block ._customer-adva__item {
+    border: none;
+    padding: 0;
+  }
+  .company-about__section ._customer-adva__item-title,
+  .company-product-card-block ._customer-adva__item-title {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .company-about__section ._customer-adva__item-text,
+  .company-product-card-block ._customer-adva__item-text {
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  .company-about__section ._customer-adva__item-text br,
+  .company-product-card-block ._customer-adva__item-text br {
+    display: none;
+  }
+  ._customer-adva__inner * {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif !important;
+  }
+  ._customer-adva__inner {
+    background: #9a342f;
+    padding: 80px 10px;
+  }
+  ._customer-adva__container {
+    max-width: 1208px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  ._customer-adva__title {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 51px;
+    color: #ffffff;
+  }
+  ._customer-adva__wrapper {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    row-gap: 10px;
+    flex-wrap: wrap;
+  }
+  ._customer-adva__item {
+    max-width: 19.5%;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e4e8ea;
+    padding: 15px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  ._customer-adva__item-img {
+    display: flex;
+  }
+  ._customer-adva__item-title {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #121212;
+  }
+  ._customer-adva__item-text {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #121212;
+  }
+  @media (max-width: 1200px) {
+    ._customer-adva__item {
+      max-width: 32.8%;
+    }
+  }
+</style>
+<!-- Advantages block style end -->
